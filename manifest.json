@@ -1,0 +1,56 @@
+{
+  "name": "One Craft",
+  "version": "0.4.0",
+  "minecraft": "1.21.1",
+  "neoforge": "21.1.265",
+  "tagline": "Set sail across the Blue Planet",
+  "launcher": {
+    "version": "1.0.0",
+    "url": "https://raw.githubusercontent.com/vLilMike/onecraft-launcher/main/download/OneCraftLauncher.exe"
+  },
+  "servers": [],
+  "mods": [
+    {
+      "id": "onecraft",
+      "name": "One Craft",
+      "file": "onecraft-0.4.0-20261107-0056.jar",
+      "url": "https://raw.githubusercontent.com/vLilMike/onecraft-launcher/main/mods/onecraft-0.4.0-20261107-0056.jar",
+      "sha1": "9bc6ceff43f29a673a58dc8949934a824aac4fa6"
+    },
+    {
+      "id": "rpessentials",
+      "name": "RP Essentials",
+      "file": "rpessentials-1.0.0.jar",
+      "url": "https://raw.githubusercontent.com/vLilMike/onecraft-launcher/main/mods/rpessentials-1.0.0.jar",
+      "sha1": "a205ddd7daf8a4e3bc71e2311f785d03fe43800d"
+    },
+    {
+      "id": "geckolib",
+      "name": "GeckoLib",
+      "file": "geckolib-neoforge-1.21.1-4.7.7.jar",
+      "url": "https://cdn.modrinth.com/data/8BmcQJ2H/versions/18qeSgOb/geckolib-neoforge-1.21.1-4.7.7.jar",
+      "sha1": "36883f8ea9117932bb5f2643a29578c6506e2339"
+    }
+  ],
+  "news": [
+    {
+      "title": "One Craft Launcher 1.0.0",
+      "date": "2026-11-07",
+      "lines": [
+        "The One Craft Launcher is here. Press PLAY and it sets up NeoForge, GeckoLib, RP Essentials and One Craft for you.",
+        "Mods update themselves: every time you press PLAY the launcher checks for a newer One Craft and downloads it.",
+        "One Craft keeps its own game folder, so your other Minecraft worlds and mods are never touched.",
+        "Sign-in goes through the official Minecraft Launcher. Pick the One Craft profile there and press Play."
+      ]
+    },
+    {
+      "title": "One Craft 0.4.0",
+      "date": "2026-11-07",
+      "lines": [
+        "Horses got a full visual rework: longer manes, fuller tails and feathered hooves.",
+        "Studs and spawn eggs for all 15 horse breeds, smaller wild herds and leather drops.",
+        "A themed riding HUD while you're in the saddle."
+      ]
+    }
+  ]
+}
