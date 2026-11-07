@@ -184,17 +184,18 @@ namespace OneCraft
                 using (var wash = new LinearGradientBrush(r, Color.FromArgb(70, Theme.Bg), Color.FromArgb(200, Theme.Bg), 90f)) g.FillRectangle(wash, r);
                 g.ResetClip();
 
-                var titleFont = Theme.Font(Math.Max(40, Height / 6.5f), FontStyle.Bold);
                 var tagFont = Theme.Font(Math.Max(15, Height / 26f), FontStyle.Regular);
                 var fmt = new StringFormat { Alignment = StringAlignment.Center, LineAlignment = StringAlignment.Center };
-                float cy = Height / 2f - Height / 16f;
-                var titleRect = new RectangleF(0, cy - titleFont.Size, Width, titleFont.Size * 2);
-                for (int i = 4; i >= 1; i--)
-                    using (var sh = new SolidBrush(Color.FromArgb(55, 0, 0, 0)))
-                        g.DrawString("ONE CRAFT", titleFont, sh, new RectangleF(titleRect.X + i, titleRect.Y + i, titleRect.Width, titleRect.Height), fmt);
-                using (var gold = new LinearGradientBrush(titleRect, Theme.GoldLight, Theme.GoldDark, 90f))
-                    g.DrawString("ONE CRAFT", titleFont, gold, titleRect, fmt);
-                float lineY = cy + titleFont.Size * .78f;
+                var logo = LauncherForm.Wordmark;
+                float lw = Math.Min(Width * .58f, Math.Min(680, Height * 1.45f));
+                float lh = logo == null ? 0 : lw * logo.Height / logo.Width;
+                float top = Height / 2f - (lh + 50) / 2f - 10;
+                if (logo != null)
+                {
+                    g.InterpolationMode = InterpolationMode.HighQualityBicubic;
+                    g.DrawImage(logo, Width / 2f - lw / 2, top, lw, lh);
+                }
+                float lineY = top + lh + 12;
                 using (var pen = new Pen(Color.FromArgb(160, Theme.Gold), 1.5f))
                 {
                     g.DrawLine(pen, Width / 2f - 150, lineY, Width / 2f - 14, lineY);
@@ -203,7 +204,7 @@ namespace OneCraft
                 using (var b = new SolidBrush(Theme.Gold)) g.FillRectangle(b, Width / 2f - 4, lineY - 4, 8, 8);
                 using (var b = new SolidBrush(Theme.Paper))
                     g.DrawString(Tagline, tagFont, b, new RectangleF(0, lineY + 10, Width, tagFont.Size * 2), fmt);
-                titleFont.Dispose(); tagFont.Dispose();
+                tagFont.Dispose();
 
                 // Slide dots.
                 for (int i = 0; i < slides.Count; i++)
@@ -392,9 +393,7 @@ namespace OneCraft
 
             // Header.
             using (var b = new LinearGradientBrush(new Rectangle(0, 0, w, HeadH), Theme.Bar, Theme.Bg, 90f)) g.FillRectangle(b, 0, 0, w, HeadH);
-            using (var f = Theme.Font(38, FontStyle.Bold))
-            using (var gold = new LinearGradientBrush(new Rectangle(20, 14, 300, 46), Theme.GoldLight, Theme.Gold, 90f))
-                g.DrawString("ONE CRAFT", f, gold, 20, 14);
+            if (Wordmark != null) g.DrawImage(Wordmark, 18, 6, 52f * Wordmark.Width / Wordmark.Height, 52);
             string sub = "One Craft Launcher  v" + Version;
             if (manifest != null) sub += "     •     One Craft " + Installer.Str(manifest, "version", "") + "  •  Minecraft " + Installer.Str(manifest, "minecraft", "1.21.1");
             using (var f = Theme.Font(13, FontStyle.Regular)) TextRenderer.DrawText(g, sub, f, new Point(24, 62), Theme.Muted);
@@ -528,6 +527,8 @@ namespace OneCraft
         }
 
         // ---------------------------------------------------------------- resources
+
+        public static readonly Image Wordmark = Resource("wordmark.png");
 
         public static Image Resource(string name)
         {
