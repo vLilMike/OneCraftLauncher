@@ -21,6 +21,12 @@ git push
 
 `publish.ps1` takes the newest JAR from `OnePieceMod\releases` and `RPEssentials\build\libs`, copies it into `mods/` and updates `manifest.json`. Every launcher picks it up the next time someone presses PLAY.
 
+## Microsoft sign-in
+
+The launcher can sign players in itself and start Minecraft directly. It switches this on when `manifest.json` has a `"clientId"` (the Azure app's Application ID). Until Mojang approves that app, Minecraft sign-in answers 403, and the launcher automatically falls back to the official Minecraft Launcher. Players can also choose the official launcher in Settings.
+
+Sign-in uses the browser with PKCE (Azure redirect URI `http://localhost`). The refresh token is stored encrypted with Windows DPAPI in `%APPDATA%\.onecraft\launcher\account.dat`.
+
 ## Updating the launcher itself
 
 Raise `Version` in `src/LauncherForm.cs` and `launcher.version` in `manifest.json`, run `build.ps1`, then commit and push. Open launchers show **Restart to update**.

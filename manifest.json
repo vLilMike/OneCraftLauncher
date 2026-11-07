@@ -5,7 +5,7 @@
   "neoforge": "21.1.265",
   "tagline": "Set sail across the Blue Planet",
   "launcher": {
-    "version": "1.0.0",
+    "version": "1.1.0",
     "url": "https://raw.githubusercontent.com/vLilMike/OneCraftLauncher/main/download/OneCraftLauncher.exe"
   },
   "servers": [],
@@ -33,6 +33,16 @@
     }
   ],
   "news": [
+    {
+      "title": "One Craft Launcher 1.1.0",
+      "date": "2026-11-07",
+      "lines": [
+        "Sign in with your Microsoft account right here in the launcher, then PLAY starts One Craft directly. This turns on as soon as Mojang approves the launcher.",
+        "Until then, PLAY keeps using the official Minecraft Launcher, just like before.",
+        "Faster game settings out of the box: tuned Java memory cleanup for smoother play.",
+        "Settings has a new switch to keep using the official Minecraft Launcher if you prefer it."
+      ]
+    },
     {
       "title": "One Craft Launcher 1.0.0",
       "date": "2026-11-07",

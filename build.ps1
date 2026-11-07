@@ -21,7 +21,7 @@ $args = @(
     "/win32icon:$(Join-Path $assets 'icon.ico')",
     '/reference:System.dll', '/reference:System.Drawing.dll', '/reference:System.Windows.Forms.dll',
     '/reference:System.IO.Compression.dll', '/reference:System.IO.Compression.FileSystem.dll',
-    '/reference:Microsoft.VisualBasic.dll',
+    '/reference:Microsoft.VisualBasic.dll', '/reference:System.Security.dll', '/reference:System.Core.dll',
     "/reference:$(Join-Path $fw 'System.Web.Extensions.dll')"
 ) + $resources + (Get-ChildItem (Join-Path $root 'src') -Filter *.cs | ForEach-Object { $_.FullName })
 

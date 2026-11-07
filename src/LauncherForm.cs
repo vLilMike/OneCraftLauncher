@@ -317,7 +317,7 @@ namespace OneCraft
 
     public class LauncherForm : Form
     {
-        public const string Version = "1.0.0";
+        public const string Version = "1.1.0";
 
         readonly string manifestSource;
         Dictionary<string, object> manifest;
@@ -335,6 +335,9 @@ namespace OneCraft
         readonly FlatButton restart = new FlatButton("Restart to update", false);
         readonly FlatButton gear = new FlatButton("⚙", false);
         readonly NewsList news = new NewsList();
+        readonly FlatButton signIn = new FlatButton("Sign in with Microsoft", false);
+        readonly FlatButton signOut = new FlatButton("Sign out", false);
+        Account account;
 
         const int HeadH = 92, FootH = 76, Side = 360;
 
@@ -354,7 +357,19 @@ namespace OneCraft
 
             gear.Font = Theme.Font(20, FontStyle.Regular);
             restart.Visible = false;
-            Controls.AddRange(new Control[] { banner, play, updateOnly, repair, folder, restart, gear, news });
+            signIn.Visible = signOut.Visible = false;
+            signOut.Font = Theme.Font(12, FontStyle.Regular);
+            Controls.AddRange(new Control[] { banner, play, updateOnly, repair, folder, restart, gear, news, signIn, signOut });
+            account = Auth.Load();
+
+            signIn.Click += delegate { SignIn(null); };
+            signOut.Click += delegate
+            {
+                Auth.SignOut();
+                account = null;
+                status = "Signed out";
+                RefreshAccount();
+            };
 
             play.Click += delegate { Start(true, false); };
             updateOnly.Click += delegate { Start(false, false); };
@@ -364,7 +379,7 @@ namespace OneCraft
                     Start(false, true);
             };
             folder.Click += delegate { Directory.CreateDirectory(Installer.GameDir); Process.Start("explorer.exe", "\"" + Installer.GameDir + "\""); };
-            gear.Click += delegate { using (var s = new SettingsForm(settings)) s.ShowDialog(this); Invalidate(); };
+            gear.Click += delegate { using (var s = new SettingsForm(settings)) s.ShowDialog(this); RefreshAccount(); };
             restart.Click += delegate
             {
                 restart.Enabled = false;
@@ -404,6 +419,58 @@ namespace OneCraft
             gear.Bounds = new Rectangle(ClientSize.Width - 24 - 40, 26, 40, 40);
             restart.Bounds = new Rectangle(gear.Left - 14 - 170, 30, 170, 32);
             news.Bounds = new Rectangle(ClientSize.Width - Side + 18, HeadH + 70, Side - 36, ClientSize.Height - FootH - HeadH - 70 - 16);
+            signIn.Bounds = new Rectangle(24, ClientSize.Height - FootH + 19, 250, 38);
+            signOut.Bounds = new Rectangle(24, ClientSize.Height - FootH + 40, 96, 26);
+        }
+
+        // ---------------------------------------------------------------- account
+
+        /// <summary>The Azure app id from the manifest. Without one, the launcher plays through the official launcher.</summary>
+        string ClientId { get { return manifest == null ? null : Installer.Str(manifest, "clientId", null); } }
+
+        bool DirectLaunch { get { return ClientId != null && !settings.UseOfficialLauncher && !notApproved; } }
+
+        void RefreshAccount()
+        {
+            signIn.Visible = DirectLaunch && account == null;
+            signOut.Visible = DirectLaunch && account != null;
+            signIn.Enabled = !busy;
+            signOut.Enabled = !busy;
+            Invalidate();
+        }
+
+        /// <summary>Browser sign-in on a worker thread; then runs <paramref name="after"/> (on the worker) if it worked.</summary>
+        void SignIn(Action after)
+        {
+            if (busy || ClientId == null) return;
+            SetBusy(true, "Opening Microsoft sign-in...");
+            progress = -1;
+            string id = ClientId;
+            new Thread(() =>
+            {
+                try
+                {
+                    var a = Auth.SignIn(id, s => Ui(() => { status = s; Invalidate(); }));
+                    Ui(() => { account = a; progress = 0; SetBusy(false, "Signed in as " + a.Name); });
+                    if (after != null) Ui(after);
+                }
+                catch (NotApprovedException) { Ui(() => { progress = 0; SetBusy(false, "Ready to play"); NotApproved(); }); }
+                catch (Exception ex)
+                {
+                    Installer.Log("Sign-in failed: " + ex);
+                    Ui(() => { progress = 0; SetBusy(false, "Not signed in"); MessageBox.Show(this, ex.Message, "Sign in", MessageBoxButtons.OK, MessageBoxIcon.Warning); });
+                }
+            }) { IsBackground = true }.Start();
+        }
+
+        bool notApproved;
+
+        void NotApproved()
+        {
+            notApproved = true;
+            RefreshAccount();
+            MessageBox.Show(this, "Mojang hasn't approved One Craft Launcher for Microsoft sign-in yet.\n\nUntil they do, PLAY opens the official Minecraft Launcher instead. Sign in there and pick the One Craft profile.",
+                "One Craft Launcher", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         protected override void OnPaint(PaintEventArgs e)
@@ -440,8 +507,13 @@ namespace OneCraft
             using (var f = Theme.Font(13, FontStyle.Regular))
             using (var small = Theme.Font(12, FontStyle.Regular))
             {
-                TextRenderer.DrawText(g, "Signs in through the Minecraft Launcher", f, new Point(24, h - FootH + 16), Theme.Paper);
-                TextRenderer.DrawText(g, "Game folder: " + Installer.GameDir + "    •    Memory: " + settings.MemoryGb + " GB", small, new Point(24, h - FootH + 40), Theme.Muted);
+                if (!DirectLaunch)
+                {
+                    TextRenderer.DrawText(g, "Signs in through the Minecraft Launcher", f, new Point(24, h - FootH + 16), Theme.Paper);
+                    TextRenderer.DrawText(g, "Memory: " + settings.MemoryGb + " GB", small, new Point(24, h - FootH + 40), Theme.Muted);
+                }
+                else if (account != null)
+                    TextRenderer.DrawText(g, "Signed in as " + account.Name, f, new Point(24, h - FootH + 14), Theme.Paper);
 
                 var sr = new Rectangle(w - Side, h - FootH + 14, Side - 24, 20);
                 TextRenderer.DrawText(g, status, f, sr, busy ? Theme.GoldLight : Theme.Paper, TextFormatFlags.Right | TextFormatFlags.EndEllipsis | TextFormatFlags.SingleLine);
@@ -563,24 +635,61 @@ namespace OneCraft
             status = text;
             play.Enabled = updateOnly.Enabled = repair.Enabled = !on && manifest != null;
             play.Text = on ? "WORKING..." : "PLAY";
-            Invalidate();
+            RefreshAccount();
         }
 
         void Start(bool launch, bool clean)
         {
             if (busy || manifest == null) return;
+            if (launch && DirectLaunch && account == null) { SignIn(() => Start(true, clean)); return; }
             SetBusy(true, "Getting ready...");
             var job = new Installer();
             job.Status = s => Ui(() => { status = s; Invalidate(); });
             job.Progress = p => Ui(() => { progress = p; Invalidate(); });
             int memory = settings.MemoryGb;
             var m = manifest;
+            bool direct = launch && DirectLaunch;
+            string clientId = ClientId;
+            var acc = account;
             new Thread(() =>
             {
                 try
                 {
                     if (clean) Installer.CleanForRepair(m);
                     job.Run(m, memory);
+
+                    if (direct)
+                    {
+                        try
+                        {
+                            acc = Auth.Refresh(clientId, acc);
+                            if (acc == null)
+                            {
+                                Ui(() => { account = null; progress = 0; SetBusy(false, "Please sign in again"); SignIn(() => Start(true, false)); });
+                                return;
+                            }
+                            var game = new GameLauncher(job).Launch(m, acc, memory, clientId);
+                            Ui(() => { account = acc; SetBusy(true, "Playing as " + acc.Name); WindowState = FormWindowState.Minimized; });
+                            game.WaitForExit();
+                            int code = game.ExitCode;
+                            Ui(() =>
+                            {
+                                WindowState = FormWindowState.Normal;
+                                Activate();
+                                progress = 0;
+                                SetBusy(false, code == 0 ? "Ready to play" : "Minecraft closed with an error");
+                                if (code != 0)
+                                    MessageBox.Show(this, "Minecraft closed with an error (code " + code + ").\n\nThe details are in logs\\latest.log inside the game folder. Press Open game folder to find it.",
+                                        "One Craft Launcher", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            });
+                            return;
+                        }
+                        catch (NotApprovedException)
+                        {
+                            Ui(NotApproved);
+                        }
+                    }
+
                     bool opened = launch && Installer.OpenMinecraftLauncher();
                     Ui(() =>
                     {
@@ -644,6 +753,7 @@ namespace OneCraft
     public class Settings
     {
         public int MemoryGb = 6;
+        public bool UseOfficialLauncher;
 
         static string FilePath { get { return Path.Combine(Installer.Data, "settings.json"); } }
 
@@ -680,7 +790,7 @@ namespace OneCraft
             MaximizeBox = MinimizeBox = false;
             ShowInTaskbar = false;
             StartPosition = FormStartPosition.CenterParent;
-            ClientSize = new Size(440, 270);
+            ClientSize = new Size(440, 320);
 
             var heading = new Label { Text = "Settings", Font = Theme.Font(24, FontStyle.Bold), ForeColor = Theme.Gold, AutoSize = true, Location = new Point(22, 16) };
             var memLabel = new Label { Text = "Memory for Minecraft (GB)", AutoSize = true, Location = new Point(24, 72) };
@@ -688,7 +798,8 @@ namespace OneCraft
             var hint = new Label { Text = "6 GB suits most PCs. Takes effect the next time you press PLAY.", ForeColor = Theme.Muted, Font = Theme.Font(12, FontStyle.Regular), AutoSize = false, Size = new Size(390, 36), Location = new Point(24, 100) };
             var logs = new FlatButton("Open launcher log", false) { Bounds = new Rectangle(24, 150, 190, 36) };
             var mods = new FlatButton("Open mods folder", false) { Bounds = new Rectangle(226, 150, 190, 36) };
-            var ok = new FlatButton("Save", false) { Bounds = new Rectangle(296, 212, 120, 38) };
+            var official = new CheckBox { Text = "Play through the official Minecraft Launcher", Checked = settings.UseOfficialLauncher, AutoSize = true, Location = new Point(24, 204), ForeColor = Theme.Paper };
+            var ok = new FlatButton("Save", false) { Bounds = new Rectangle(296, 262, 120, 38) };
             logs.Click += delegate
             {
                 string f = Path.Combine(Installer.Data, "launcher.log");
@@ -701,8 +812,8 @@ namespace OneCraft
                 Directory.CreateDirectory(d);
                 Process.Start("explorer.exe", "\"" + d + "\"");
             };
-            ok.Click += delegate { settings.MemoryGb = (int)mem.Value; settings.Save(); Close(); };
-            Controls.AddRange(new Control[] { heading, memLabel, mem, hint, logs, mods, ok });
+            ok.Click += delegate { settings.MemoryGb = (int)mem.Value; settings.UseOfficialLauncher = official.Checked; settings.Save(); Close(); };
+            Controls.AddRange(new Control[] { heading, memLabel, mem, hint, logs, mods, official, ok });
         }
     }
 }

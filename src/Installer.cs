@@ -16,6 +16,7 @@ namespace OneCraft
     {
         public const string DefaultManifest = "https://raw.githubusercontent.com/vLilMike/OneCraftLauncher/main/manifest.json";
         public const string ProfileKey = "onecraft";
+        public const string GcArgs = "-XX:+UseG1GC -XX:+UnlockExperimentalVMOptions -XX:G1NewSizePercent=20 -XX:G1ReservePercent=20 -XX:MaxGCPauseMillis=50 -XX:G1HeapRegionSize=32M";
         const string StorePackage = "Microsoft.4297127D64EC6_8wekyb3d8bbwe";
 
         public Action<string> Status = delegate { };
@@ -224,7 +225,7 @@ namespace OneCraft
 
         // ---------------------------------------------------------------- java
 
-        string FindJava()
+        public string FindJava()
         {
             var tries = new List<string>
             {
@@ -341,7 +342,7 @@ namespace OneCraft
             profile["lastVersionId"] = VersionId(neo);
             profile["gameDir"] = GameDir;
             profile["lastUsed"] = now;
-            profile["javaArgs"] = "-Xmx" + memoryGb + "G -Xms2G -XX:+UseG1GC -XX:+UnlockExperimentalVMOptions -XX:G1NewSizePercent=20 -XX:G1ReservePercent=20 -XX:MaxGCPauseMillis=50 -XX:G1HeapRegionSize=32M";
+            profile["javaArgs"] = "-Xmx" + memoryGb + "G -Xms2G " + GcArgs;
             string icon = LauncherForm.IconDataUri();
             if (icon != null) profile["icon"] = icon;
             profiles[ProfileKey] = profile;
