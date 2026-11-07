@@ -14,7 +14,7 @@ namespace OneCraft
     /// <summary>Everything the launcher does to get a player ready: NeoForge, Java, mods, the launcher profile.</summary>
     public class Installer
     {
-        public const string DefaultManifest = "https://raw.githubusercontent.com/vLilMike/onecraft-launcher/main/manifest.json";
+        public const string DefaultManifest = "https://raw.githubusercontent.com/vLilMike/OneCraftLauncher/main/manifest.json";
         public const string ProfileKey = "onecraft";
         const string StorePackage = "Microsoft.4297127D64EC6_8wekyb3d8bbwe";
 

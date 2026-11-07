@@ -6,7 +6,7 @@
   "tagline": "Set sail across the Blue Planet",
   "launcher": {
     "version": "1.0.0",
-    "url": "https://raw.githubusercontent.com/vLilMike/onecraft-launcher/main/download/OneCraftLauncher.exe"
+    "url": "https://raw.githubusercontent.com/vLilMike/OneCraftLauncher/main/download/OneCraftLauncher.exe"
   },
   "servers": [],
   "mods": [
@@ -14,14 +14,14 @@
       "id": "onecraft",
       "name": "One Craft",
       "file": "onecraft-0.4.0-20261107-0056.jar",
-      "url": "https://raw.githubusercontent.com/vLilMike/onecraft-launcher/main/mods/onecraft-0.4.0-20261107-0056.jar",
+      "url": "https://raw.githubusercontent.com/vLilMike/OneCraftLauncher/main/mods/onecraft-0.4.0-20261107-0056.jar",
       "sha1": "9bc6ceff43f29a673a58dc8949934a824aac4fa6"
     },
     {
       "id": "rpessentials",
       "name": "RP Essentials",
       "file": "rpessentials-1.0.0.jar",
-      "url": "https://raw.githubusercontent.com/vLilMike/onecraft-launcher/main/mods/rpessentials-1.0.0.jar",
+      "url": "https://raw.githubusercontent.com/vLilMike/OneCraftLauncher/main/mods/rpessentials-1.0.0.jar",
       "sha1": "a205ddd7daf8a4e3bc71e2311f785d03fe43800d"
     },
     {

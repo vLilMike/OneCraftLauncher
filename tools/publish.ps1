@@ -5,7 +5,7 @@ param([string[]]$Note)
 $ErrorActionPreference = 'Stop'
 $root = Split-Path $PSScriptRoot -Parent
 $docs = Split-Path $root -Parent
-$raw = 'https://raw.githubusercontent.com/vLilMike/onecraft-launcher/main/mods/'
+$raw = 'https://raw.githubusercontent.com/vLilMike/OneCraftLauncher/main/mods/'
 $mods = Join-Path $root 'mods'
 $manifestPath = Join-Path $root 'manifest.json'
 $m = Get-Content $manifestPath -Raw | ConvertFrom-Json
@@ -35,4 +35,4 @@ if ($Note) {
 }
 
 ($m | ConvertTo-Json -Depth 10) | Set-Content $manifestPath -Encoding UTF8
-Write-Host "manifest.json updated. Now commit and push the onecraft-launcher repo."
+Write-Host "manifest.json updated. Now commit and push the OneCraftLauncher repo."

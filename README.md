@@ -1,6 +1,6 @@
 # One Craft Launcher
 
-Download: [OneCraftLauncher.exe](https://raw.githubusercontent.com/vLilMike/onecraft-launcher/main/download/OneCraftLauncher.exe)
+Download: [OneCraftLauncher.exe](https://raw.githubusercontent.com/vLilMike/OneCraftLauncher/main/download/OneCraftLauncher.exe)
 
 Press **PLAY** and the launcher:
 
