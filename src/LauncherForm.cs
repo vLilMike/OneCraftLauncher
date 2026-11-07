@@ -424,8 +424,15 @@ namespace OneCraft
             var side = new Rectangle(w - Side, HeadH, Side, h - HeadH - FootH);
             using (var b = new SolidBrush(Theme.Panel)) g.FillRectangle(b, side);
             using (var pen = new Pen(Theme.Line)) g.DrawLine(pen, side.X, side.Y, side.X, side.Bottom);
-            DrawNewspaper(g, side.X + 18, HeadH + 26);
-            using (var f = Theme.Font(26, FontStyle.Bold)) TextRenderer.DrawText(g, "News Coo", f, new Point(side.X + 58, HeadH + 24), Theme.Gold);
+            using (var f = Theme.Font(26, FontStyle.Bold))
+            {
+                // Centre the icon on the letters themselves, not on the font's line box.
+                int textY = HeadH + 26;
+                var ink = InkRows("News Coo", f);
+                int mid = textY + (ink.X + ink.Y) / 2;
+                DrawNewspaper(g, side.X + 18, mid - 16);
+                TextRenderer.DrawText(g, "News Coo", f, new Point(side.X + 58, textY), Theme.Gold, TextFormatFlags.NoPadding);
+            }
 
             // Footer.
             using (var b = new SolidBrush(Theme.Bar)) g.FillRectangle(b, 0, h - FootH, w, FootH);
@@ -455,6 +462,37 @@ namespace OneCraft
                         using (var b = new LinearGradientBrush(bar, Theme.GoldDark, Theme.GoldLight, 0f)) g.FillPath(b, path);
                 }
             }
+        }
+
+        static readonly Dictionary<string, Point> inkCache = new Dictionary<string, Point>();
+
+        /// <summary>First and last pixel rows that the text actually paints (X = top, Y = bottom), measured once.</summary>
+        static Point InkRows(string text, Font f)
+        {
+            Point p;
+            string key = text + "|" + f.Size;
+            if (inkCache.TryGetValue(key, out p)) return p;
+            var size = TextRenderer.MeasureText(text, f, Size.Empty, TextFormatFlags.NoPadding);
+            int top = -1, bottom = size.Height;
+            using (var bmp = new Bitmap(Math.Max(1, size.Width), Math.Max(1, size.Height)))
+            {
+                using (var g = Graphics.FromImage(bmp))
+                {
+                    g.Clear(Color.Black);
+                    TextRenderer.DrawText(g, text, f, Point.Empty, Color.White, Color.Black, TextFormatFlags.NoPadding);
+                }
+                for (int y = 0; y < bmp.Height; y++)
+                    for (int x = 0; x < bmp.Width; x++)
+                        if (bmp.GetPixel(x, y).R > 100)
+                        {
+                            if (top < 0) top = y;
+                            bottom = y;
+                            break;
+                        }
+            }
+            p = new Point(Math.Max(0, top), bottom);
+            inkCache[key] = p;
+            return p;
         }
 
         /// <summary>A small blocky folded newspaper (32x30) drawn in pixels to match the logo.</summary>
