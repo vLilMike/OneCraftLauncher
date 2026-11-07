@@ -328,7 +328,7 @@ namespace OneCraft
             StartPosition = FormStartPosition.CenterScreen;
             DoubleBuffered = true;
             SetStyle(ControlStyles.ResizeRedraw, true);
-            try { Icon = Icon.ExtractAssociatedIcon(Application.ExecutablePath); } catch { }
+            try { using (var s = typeof(LauncherForm).Assembly.GetManifestResourceStream("icon.ico")) Icon = new Icon(s); } catch { }
 
             gear.Font = Theme.Font(20, FontStyle.Regular);
             restart.Visible = false;

@@ -1,56 +1,34 @@
-# Draws the One Craft Launcher icon: a blocky gold anchor on a navy tile.
-# Writes assets/icon.ico (16-256 px) and assets/icon128.png (used as the Minecraft Launcher profile icon).
+# Builds the launcher icon from the One Craft logo (assets/logo.png).
+# Writes assets/icon.ico (16-256 px, used for the EXE and taskbar) and assets/icon128.png (the Minecraft Launcher profile icon).
 Add-Type -AssemblyName System.Drawing
 $root = Split-Path $PSScriptRoot -Parent
 $assets = Join-Path $root 'assets'
+$logo = [System.Drawing.Bitmap]::FromFile((Join-Path $assets 'logo.png'))
 
-$art = @(
-    '................',
-    '.......##.......',
-    '......#..#......',
-    '......#..#......',
-    '.......##.......',
-    '....########....',
-    '.......##.......',
-    '.......##.......',
-    '.......##.......',
-    '.......##.......',
-    '.#.....##.....#.',
-    '.##....##....##.',
-    '..##...##...##..',
-    '...####..####...',
-    '.....######.....',
-    '................'
-)
-
-$navy = [System.Drawing.Color]::FromArgb(255, 11, 20, 36)
-$panel = [System.Drawing.Color]::FromArgb(255, 23, 39, 66)
-$gold = [System.Drawing.Color]::FromArgb(255, 227, 176, 75)
-$goldLight = [System.Drawing.Color]::FromArgb(255, 246, 210, 128)
-$goldDark = [System.Drawing.Color]::FromArgb(255, 160, 113, 34)
+# Trim the empty margin so the logo fills the icon.
+$minX = $logo.Width; $minY = $logo.Height; $maxX = 0; $maxY = 0
+for ($y = 0; $y -lt $logo.Height; $y += 2) {
+    for ($x = 0; $x -lt $logo.Width; $x += 2) {
+        if ($logo.GetPixel($x, $y).A -gt 16) {
+            if ($x -lt $minX) { $minX = $x }; if ($x -gt $maxX) { $maxX = $x }
+            if ($y -lt $minY) { $minY = $y }; if ($y -gt $maxY) { $maxY = $y }
+        }
+    }
+}
+$w = $maxX - $minX + 2; $h = $maxY - $minY + 2
+$side = [Math]::Max($w, $h)
 
 function Draw-Icon([int]$size) {
     $bmp = New-Object System.Drawing.Bitmap $size, $size
     $g = [System.Drawing.Graphics]::FromImage($bmp)
-    $g.SmoothingMode = 'None'
+    $g.InterpolationMode = 'HighQualityBicubic'
+    $g.PixelOffsetMode = 'HighQuality'
+    $g.SmoothingMode = 'AntiAlias'
     $g.Clear([System.Drawing.Color]::Transparent)
-    $cell = $size / 16.0
-    # Tile with a gold rim, blocky corners.
-    $b = New-Object System.Drawing.SolidBrush $goldDark
-    $g.FillRectangle($b, [float]$cell * 0.5, 0, $size - $cell, $size)
-    $g.FillRectangle($b, 0, [float]$cell * 0.5, $size, $size - $cell)
-    $b = New-Object System.Drawing.SolidBrush $navy
-    $g.FillRectangle($b, [float]$cell * 0.5, [float]$cell * 0.5, $size - $cell, $size - $cell)
-    $b = New-Object System.Drawing.SolidBrush $panel
-    $g.FillRectangle($b, [float]$cell * 0.5, [float]$cell * 0.5, $size - $cell, [float]($size - $cell) / 2)
-    for ($y = 0; $y -lt 16; $y++) {
-        for ($x = 0; $x -lt 16; $x++) {
-            if ($art[$y][$x] -ne '#') { continue }
-            $c = if ($y -lt 5) { $goldLight } elseif ($y -gt 11) { $goldDark } else { $gold }
-            $b = New-Object System.Drawing.SolidBrush $c
-            $g.FillRectangle($b, [float]($x * $cell), [float]($y * $cell), [float]$cell, [float]$cell)
-        }
-    }
+    $scale = $size / $side
+    $dw = $w * $scale; $dh = $h * $scale
+    $dest = New-Object System.Drawing.RectangleF (($size - $dw) / 2), (($size - $dh) / 2), $dw, $dh
+    $g.DrawImage($logo, $dest, (New-Object System.Drawing.RectangleF $minX, $minY, $w, $h), 'Pixel')
     $g.Dispose()
     return $bmp
 }
@@ -65,19 +43,20 @@ foreach ($s in $sizes) {
     if ($s -eq 128) { $bmp.Save((Join-Path $assets 'icon128.png'), [System.Drawing.Imaging.ImageFormat]::Png) }
     $bmp.Dispose()
 }
+$logo.Dispose()
 
 # ICO file with PNG-compressed entries.
 $out = New-Object System.IO.MemoryStream
-$w = New-Object System.IO.BinaryWriter $out
-$w.Write([uint16]0); $w.Write([uint16]1); $w.Write([uint16]$sizes.Count)
+$bw = New-Object System.IO.BinaryWriter $out
+$bw.Write([uint16]0); $bw.Write([uint16]1); $bw.Write([uint16]$sizes.Count)
 $offset = 6 + 16 * $sizes.Count
 for ($i = 0; $i -lt $sizes.Count; $i++) {
     $s = $sizes[$i]; $dim = if ($s -ge 256) { 0 } else { $s }
-    $w.Write([byte]$dim); $w.Write([byte]$dim); $w.Write([byte]0); $w.Write([byte]0)
-    $w.Write([uint16]1); $w.Write([uint16]32)
-    $w.Write([uint32]$pngs[$i].Length); $w.Write([uint32]$offset)
+    $bw.Write([byte]$dim); $bw.Write([byte]$dim); $bw.Write([byte]0); $bw.Write([byte]0)
+    $bw.Write([uint16]1); $bw.Write([uint16]32)
+    $bw.Write([uint32]$pngs[$i].Length); $bw.Write([uint32]$offset)
     $offset += $pngs[$i].Length
 }
-foreach ($p in $pngs) { $w.Write($p) }
+foreach ($p in $pngs) { $bw.Write($p) }
 [System.IO.File]::WriteAllBytes((Join-Path $assets 'icon.ico'), $out.ToArray())
 Write-Host "Icon written to $assets"
