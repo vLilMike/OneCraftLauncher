@@ -11,7 +11,7 @@ $out = Join-Path $root 'download\OneCraftLauncher.exe'
 New-Item -ItemType Directory -Force (Split-Path $out) | Out-Null
 
 $resources = @()
-foreach ($f in Get-ChildItem $assets -File | Where-Object { $_.Extension -in '.jpg', '.png', '.ico' -and $_.Name -ne 'logo.png' }) {
+foreach ($f in Get-ChildItem $assets -File | Where-Object { $_.Extension -in '.jpg', '.png', '.ico', '.ttf' -and $_.Name -ne 'logo.png' }) {
     $resources += "/resource:$($f.FullName),$($f.Name)"
 }
 

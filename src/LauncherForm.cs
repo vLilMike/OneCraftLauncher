@@ -25,18 +25,39 @@ namespace OneCraft
         public static readonly Color Sea = Color.FromArgb(63, 176, 192);
         public static readonly Color Bad = Color.FromArgb(214, 96, 84);
 
-        static string family;
+        static FontFamily family;
+        static readonly PrivateFontCollection modFonts = new PrivateFontCollection();
+
+        [System.Runtime.InteropServices.DllImport("gdi32.dll")]
+        static extern IntPtr AddFontMemResourceEx(IntPtr font, uint length, IntPtr reserved, ref uint fonts);
+
+        /// <summary>The mod's own lettering font (CC Wild Words), embedded in the EXE. Falls back to Segoe UI.</summary>
+        static FontFamily Family()
+        {
+            if (family != null) return family;
+            try
+            {
+                using (var s = typeof(Theme).Assembly.GetManifestResourceStream("wildwords.ttf"))
+                {
+                    var data = new byte[s.Length];
+                    s.Read(data, 0, data.Length);
+                    IntPtr mem = System.Runtime.InteropServices.Marshal.AllocCoTaskMem(data.Length);
+                    System.Runtime.InteropServices.Marshal.Copy(data, 0, mem, data.Length);
+                    modFonts.AddMemoryFont(mem, data.Length);
+                    uint count = 0;
+                    AddFontMemResourceEx(mem, (uint)data.Length, IntPtr.Zero, ref count); // lets TextRenderer (GDI) draw it too
+                    family = modFonts.Families[0];
+                }
+            }
+            catch { family = new FontFamily("Segoe UI"); }
+            return family;
+        }
 
         public static Font Font(float size, FontStyle style)
         {
-            if (family == null)
-            {
-                family = "Segoe UI";
-                using (var fonts = new InstalledFontCollection())
-                    foreach (var f in fonts.Families)
-                        if (f.Name == "Bahnschrift") { family = f.Name; break; }
-            }
-            return new Font(family, size, style, GraphicsUnit.Pixel);
+            var f = Family();
+            if (!f.IsStyleAvailable(style)) style = FontStyle.Regular;
+            return new Font(f, size, style, GraphicsUnit.Pixel);
         }
 
         public static GraphicsPath Round(RectangleF r, float radius)
