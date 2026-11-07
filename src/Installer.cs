@@ -341,7 +341,7 @@ namespace OneCraft
             profile["lastVersionId"] = VersionId(neo);
             profile["gameDir"] = GameDir;
             profile["lastUsed"] = now;
-            profile["javaArgs"] = "-Xmx" + memoryGb + "G -Xms2G -XX:+UseG1GC -XX:+ParallelRefProcEnabled -XX:MaxGCPauseMillis=200";
+            profile["javaArgs"] = "-Xmx" + memoryGb + "G -Xms2G -XX:+UseG1GC -XX:+UnlockExperimentalVMOptions -XX:G1NewSizePercent=20 -XX:G1ReservePercent=20 -XX:MaxGCPauseMillis=50 -XX:G1HeapRegionSize=32M";
             string icon = LauncherForm.IconDataUri();
             if (icon != null) profile["icon"] = icon;
             profiles[ProfileKey] = profile;
