@@ -237,7 +237,7 @@ namespace OneCraft
         }
     }
 
-    /// <summary>"What's new": patch-note cards from the manifest, with its own wheel scrolling and a thin gold scrollbar.</summary>
+    /// <summary>"News Coo": patch-note cards from the manifest, with its own wheel scrolling and a thin gold scrollbar.</summary>
     class NewsList : Control
     {
         public List<Dictionary<string, object>> Items = new List<Dictionary<string, object>>();
@@ -420,11 +420,12 @@ namespace OneCraft
             using (var f = Theme.Font(13, FontStyle.Regular)) TextRenderer.DrawText(g, sub, f, new Point(24, 62), Theme.Muted);
             using (var pen = new Pen(Color.FromArgb(120, Theme.GoldDark))) g.DrawLine(pen, 0, HeadH - 1, w, HeadH - 1);
 
-            // What's new column.
+            // News Coo column.
             var side = new Rectangle(w - Side, HeadH, Side, h - HeadH - FootH);
             using (var b = new SolidBrush(Theme.Panel)) g.FillRectangle(b, side);
             using (var pen = new Pen(Theme.Line)) g.DrawLine(pen, side.X, side.Y, side.X, side.Bottom);
-            using (var f = Theme.Font(26, FontStyle.Bold)) TextRenderer.DrawText(g, "What's new", f, new Point(side.X + 18, HeadH + 24), Theme.Gold);
+            DrawNewspaper(g, side.X + 18, HeadH + 26);
+            using (var f = Theme.Font(26, FontStyle.Bold)) TextRenderer.DrawText(g, "News Coo", f, new Point(side.X + 58, HeadH + 24), Theme.Gold);
 
             // Footer.
             using (var b = new SolidBrush(Theme.Bar)) g.FillRectangle(b, 0, h - FootH, w, FootH);
@@ -454,6 +455,29 @@ namespace OneCraft
                         using (var b = new LinearGradientBrush(bar, Theme.GoldDark, Theme.GoldLight, 0f)) g.FillPath(b, path);
                 }
             }
+        }
+
+        /// <summary>A small blocky folded newspaper (32x30) drawn in pixels to match the logo.</summary>
+        static void DrawNewspaper(Graphics g, int x, int y)
+        {
+            var old = g.SmoothingMode;
+            g.SmoothingMode = SmoothingMode.None;
+            using (var ink = new SolidBrush(Theme.Bg))
+            using (var paper = new SolidBrush(Theme.Paper))
+            using (var shade = new SolidBrush(Color.FromArgb(190, 180, 156)))
+            using (var gold = new SolidBrush(Theme.Gold))
+            using (var lines = new SolidBrush(Color.FromArgb(120, 112, 96)))
+            {
+                g.FillRectangle(ink, x, y + 2, 32, 28);             // outline
+                g.FillRectangle(shade, x + 2, y + 4, 28, 24);       // back page
+                g.FillRectangle(paper, x + 2, y + 4, 24, 24);       // front page
+                g.FillRectangle(ink, x + 26, y + 4, 2, 24);         // fold
+                g.FillRectangle(gold, x + 4, y + 6, 20, 5);         // masthead
+                g.FillRectangle(lines, x + 4, y + 13, 9, 7);        // picture
+                for (int i = 0; i < 4; i++) g.FillRectangle(lines, x + 15, y + 13 + i * 3, 9, 1);
+                for (int i = 0; i < 2; i++) g.FillRectangle(lines, x + 4, y + 22 + i * 3, 20, 1);
+            }
+            g.SmoothingMode = old;
         }
 
         readonly System.Windows.Forms.Timer spinner = new System.Windows.Forms.Timer { Interval = 30 };
