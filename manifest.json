@@ -4,8 +4,10 @@
   "minecraft": "1.21.1",
   "neoforge": "21.1.265",
   "tagline": "Set sail across the Blue Planet",
+  "clientId": "e87154b1-c20f-406c-af4a-09036141e40d",
+  "signIn": false,
   "launcher": {
-    "version": "1.1.0",
+    "version": "1.1.1",
     "url": "https://raw.githubusercontent.com/vLilMike/OneCraftLauncher/main/download/OneCraftLauncher.exe"
   },
   "servers": [],

@@ -23,7 +23,7 @@ git push
 
 ## Microsoft sign-in
 
-The launcher can sign players in itself and start Minecraft directly. It switches this on when `manifest.json` has a `"clientId"` (the Azure app's Application ID). Until Mojang approves that app, Minecraft sign-in answers 403, and the launcher automatically falls back to the official Minecraft Launcher. Players can also choose the official launcher in Settings.
+The launcher can sign players in itself and start Minecraft directly. It switches this on when `manifest.json` has a `"clientId"` (the Azure app's Application ID) and `"signIn": true`. Set `signIn` to true once Mojang approves the app. Until Mojang approves that app, Minecraft sign-in answers 403, and the launcher automatically falls back to the official Minecraft Launcher. Players can also choose the official launcher in Settings.
 
 Sign-in uses the browser with PKCE (Azure redirect URI `http://localhost`). The refresh token is stored encrypted with Windows DPAPI in `%APPDATA%\.onecraft\launcher\account.dat`.
 

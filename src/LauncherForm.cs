@@ -317,7 +317,7 @@ namespace OneCraft
 
     public class LauncherForm : Form
     {
-        public const string Version = "1.1.0";
+        public const string Version = "1.1.1";
 
         readonly string manifestSource;
         Dictionary<string, object> manifest;
@@ -428,7 +428,8 @@ namespace OneCraft
         /// <summary>The Azure app id from the manifest. Without one, the launcher plays through the official launcher.</summary>
         string ClientId { get { return manifest == null ? null : Installer.Str(manifest, "clientId", null); } }
 
-        bool DirectLaunch { get { return ClientId != null && !settings.UseOfficialLauncher && !notApproved; } }
+        /// <summary>"signIn": true in the manifest once Mojang has approved the app; until then players use the official launcher.</summary>
+        bool DirectLaunch { get { return ClientId != null && Installer.Str(manifest, "signIn", "False") == "True" && !settings.UseOfficialLauncher && !notApproved; } }
 
         void RefreshAccount()
         {
