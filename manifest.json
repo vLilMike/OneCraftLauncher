@@ -15,9 +15,9 @@
     {
       "id": "onecraft",
       "name": "One Craft",
-      "file": "onecraft-0.4.1-20261108-0859.jar",
-      "url": "https://raw.githubusercontent.com/vLilMike/OneCraftLauncher/main/mods/onecraft-0.4.1-20261108-0859.jar",
-      "sha1": "aba44977270c22ca6933ed173bbf8e02efac76ec"
+      "file": "onecraft-0.4.1-20261108-1748.jar",
+      "url": "https://raw.githubusercontent.com/vLilMike/OneCraftLauncher/main/mods/onecraft-0.4.1-20261108-1748.jar",
+      "sha1": "539c3f4935d21eacf15f82199e02485933e07c5e"
     },
     {
       "id": "rpessentials",
@@ -49,6 +49,18 @@
     }
   ],
   "news": [
+    {
+      "title": "One Craft 0.4.1: Baratie, Foosha Village and combat",
+      "date": "2026-11-08",
+      "lines": [
+        "The Baratie floats somewhere in the East Blue: one per world, with docks on three sides so several ships can tie up. It can't be broken or built on, and no mobs spawn aboard.",
+        "Foosha Village on Dawn Island in the East Blue: windmills, fields, the plaza well, and Makino serving food and drink at Partys Bar.",
+        "The Red Line now has a passage between the North Blue and East Blue and one between the West Blue and South Blue. Nobody can build on the Red Line or climb it.",
+        "Perfect guard: raise your guard just as a basic left-click hit lands to block it completely and stagger the attacker for 2 seconds. Devil Fruit moves and techniques are only blocked normally.",
+        "Holding guard while your last swing finishes now raises it as soon as the swing ends, so heavy weapons and Two and Three Sword Style no longer leave you open.",
+        "The clash bar sits a little lower on screen, still clear of your hotbar."
+      ]
+    },
     {
       "title": "One Craft 0.4.1 update",
       "date": "2026-11-08",
