@@ -15,16 +15,16 @@
     {
       "id": "onecraft",
       "name": "One Craft",
-      "file": "onecraft-0.4.1-20261108-0814.jar",
-      "url": "https://raw.githubusercontent.com/vLilMike/OneCraftLauncher/main/mods/onecraft-0.4.1-20261108-0814.jar",
-      "sha1": "75ea5578a8f5f05f97de525740f88601383f59c3"
+      "file": "onecraft-0.4.1-20261108-0859.jar",
+      "url": "https://raw.githubusercontent.com/vLilMike/OneCraftLauncher/main/mods/onecraft-0.4.1-20261108-0859.jar",
+      "sha1": "aba44977270c22ca6933ed173bbf8e02efac76ec"
     },
     {
       "id": "rpessentials",
       "name": "RP Essentials",
-      "file": "rpessentials-1.3.0.jar",
-      "url": "https://raw.githubusercontent.com/vLilMike/OneCraftLauncher/main/mods/rpessentials-1.3.0.jar",
-      "sha1": "a6756e4f5f5482ef5055a8b9026965747cad200d"
+      "file": "rpessentials-1.4.0.jar",
+      "url": "https://raw.githubusercontent.com/vLilMike/OneCraftLauncher/main/mods/rpessentials-1.4.0.jar",
+      "sha1": "6e210168c6c84d8fc37fdad064f35b8ca3d41564"
     },
     {
       "id": "geckolib",
@@ -53,6 +53,9 @@
       "title": "One Craft 0.4.1 update",
       "date": "2026-11-08",
       "lines": [
+        "New players now arrive at the One Craft hub. Make your character there, then type /setsail to leave for your sea. /hub brings you back any time.",
+        "/serverrules and /gettingstarted tell you everything you need to begin.",
+        "A fresh One Craft logo on the title screen.",
         "A clock and date now sit beside your status plate. Every voyage starts on 1 January 1755.",
         "Press ] to open the calendar: the month at a glance, moon phases, season and today's weather.",
         "New Settings button (the cogwheel on your Character Record): change the size of the menus and HUD, and switch HUD pieces and camera effects on or off.",
