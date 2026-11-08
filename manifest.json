@@ -32,6 +32,13 @@
       "file": "geckolib-neoforge-1.21.1-4.7.7.jar",
       "url": "https://cdn.modrinth.com/data/8BmcQJ2H/versions/18qeSgOb/geckolib-neoforge-1.21.1-4.7.7.jar",
       "sha1": "36883f8ea9117932bb5f2643a29578c6506e2339"
+    },
+    {
+      "id": "jei",
+      "name": "Just Enough Items",
+      "file": "jei-1.21.1-neoforge-19.70.0.468.jar",
+      "url": "https://cdn.modrinth.com/data/u6dRKJwZ/versions/j41QZiGx/jei-1.21.1-neoforge-19.70.0.468.jar",
+      "sha1": "92a2075b6085a3f05c36e59ad5aed6036dd748e4"
     }
   ],
   "news": [
@@ -39,6 +46,7 @@
       "title": "One Craft 0.4.1",
       "date": "2026-11-07",
       "lines": [
+        "Just Enough Items (JEI) now comes with the launcher, so you can look up any recipe in game.",
         "Buy land for your crew: plant a Crew Flag, then right-click it to buy the chunks around it with Beli.",
         "Crew Flags fly your Jolly Roger, and you can now import a picture as your Jolly Roger in the crew menu.",
         "Every port's starter chest now holds a Sea Chart, and Sea Charts craft from 3 paper and any dye.",
