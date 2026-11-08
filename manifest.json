@@ -15,9 +15,9 @@
     {
       "id": "onecraft",
       "name": "One Craft",
-      "file": "onecraft-0.4.1-20261107-2122.jar",
-      "url": "https://raw.githubusercontent.com/vLilMike/OneCraftLauncher/main/mods/onecraft-0.4.1-20261107-2122.jar",
-      "sha1": "3d7a452a4ae67785e80a621f659ebf0cfeaf6d86"
+      "file": "onecraft-0.4.1-20261107-2313.jar",
+      "url": "https://raw.githubusercontent.com/vLilMike/OneCraftLauncher/main/mods/onecraft-0.4.1-20261107-2313.jar",
+      "sha1": "45368d5505350740dadb0d2d848ca44733bf7054"
     },
     {
       "id": "rpessentials",
@@ -42,6 +42,18 @@
     }
   ],
   "news": [
+    {
+      "title": "One Craft 0.4.1 update",
+      "date": "2026-11-08",
+      "lines": [
+        "A clock and date now sit beside your status plate. Every voyage starts on 1 January 1755.",
+        "Press ] to open the calendar: the month at a glance, moon phases, season and today's weather.",
+        "New Settings button (the cogwheel on your Character Record): change the size of the menus and HUD, and switch HUD pieces and camera effects on or off.",
+        "The Bounty Board is for Marines only. Everyone else can buy a newspaper from a News Coo to see who's wanted.",
+        "Your fighting style is picked in the character creator and kept for good, unless the server allows changing it.",
+        "Harbours are built on cleaner ground: no more pits, puddles and bare dirt patches around the docks."
+      ]
+    },
     {
       "title": "One Craft 0.4.1",
       "date": "2026-11-07",
