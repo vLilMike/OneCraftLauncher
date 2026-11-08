@@ -1,6 +1,6 @@
 {
   "name": "One Craft",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "minecraft": "1.21.1",
   "neoforge": "21.1.265",
   "tagline": "Set sail across the Blue Planet",
@@ -15,16 +15,16 @@
     {
       "id": "onecraft",
       "name": "One Craft",
-      "file": "onecraft-0.4.0-20261107-0056.jar",
-      "url": "https://raw.githubusercontent.com/vLilMike/OneCraftLauncher/main/mods/onecraft-0.4.0-20261107-0056.jar",
-      "sha1": "9bc6ceff43f29a673a58dc8949934a824aac4fa6"
+      "file": "onecraft-0.4.1-20261107-2122.jar",
+      "url": "https://raw.githubusercontent.com/vLilMike/OneCraftLauncher/main/mods/onecraft-0.4.1-20261107-2122.jar",
+      "sha1": "3d7a452a4ae67785e80a621f659ebf0cfeaf6d86"
     },
     {
       "id": "rpessentials",
       "name": "RP Essentials",
-      "file": "rpessentials-1.0.0.jar",
-      "url": "https://raw.githubusercontent.com/vLilMike/OneCraftLauncher/main/mods/rpessentials-1.0.0.jar",
-      "sha1": "a205ddd7daf8a4e3bc71e2311f785d03fe43800d"
+      "file": "rpessentials-1.1.0.jar",
+      "url": "https://raw.githubusercontent.com/vLilMike/OneCraftLauncher/main/mods/rpessentials-1.1.0.jar",
+      "sha1": "a1707c3435b5bdab0f83a4e38fb6c338b4802ad7"
     },
     {
       "id": "geckolib",
@@ -35,6 +35,19 @@
     }
   ],
   "news": [
+    {
+      "title": "One Craft 0.4.1",
+      "date": "2026-11-07",
+      "lines": [
+        "Buy land for your crew: plant a Crew Flag, then right-click it to buy the chunks around it with Beli.",
+        "Crew Flags fly your Jolly Roger, and you can now import a picture as your Jolly Roger in the crew menu.",
+        "Every port's starter chest now holds a Sea Chart, and Sea Charts craft from 3 paper and any dye.",
+        "RP Essentials 1.1: /sethome, /home, /spawn and /back, veinmining (hold the ` key while mining) and fast leaf decay.",
+        "Ships sail at a steadier pace: the wind still helps or slows you, and storms no longer wreck your speed.",
+        "Fixes for Marine sail lettering, draped coats and boots while running, and getting stuck in the harbour on your first spawn.",
+        "Worlds made before 0.4.1 lose their One Craft blocks and items, so start a new world."
+      ]
+    },
     {
       "title": "One Craft Launcher 1.1.0",
       "date": "2026-11-07",
