@@ -22,9 +22,9 @@
     {
       "id": "rpessentials",
       "name": "RP Essentials",
-      "file": "rpessentials-1.1.0.jar",
-      "url": "https://raw.githubusercontent.com/vLilMike/OneCraftLauncher/main/mods/rpessentials-1.1.0.jar",
-      "sha1": "a1707c3435b5bdab0f83a4e38fb6c338b4802ad7"
+      "file": "rpessentials-1.2.0.jar",
+      "url": "https://raw.githubusercontent.com/vLilMike/OneCraftLauncher/main/mods/rpessentials-1.2.0.jar",
+      "sha1": "0580d2c684d686f58f783c8d6d6573163944d5a7"
     },
     {
       "id": "geckolib",
@@ -51,7 +51,8 @@
         "New Settings button (the cogwheel on your Character Record): change the size of the menus and HUD, and switch HUD pieces and camera effects on or off.",
         "The Bounty Board is for Marines only. Everyone else can buy a newspaper from a News Coo to see who's wanted.",
         "Your fighting style is picked in the character creator and kept for good, unless the server allows changing it.",
-        "Harbours are built on cleaner ground: no more pits, puddles and bare dirt patches around the docks."
+        "Harbours are built on cleaner ground: no more pits, puddles and bare dirt patches around the docks.",
+        "RP Essentials 1.2: the server now keeps a log of who breaks and places blocks, so staff can check and undo griefing, and autoclickers are caught."
       ]
     },
     {
