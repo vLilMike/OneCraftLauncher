@@ -15,9 +15,9 @@
     {
       "id": "onecraft",
       "name": "One Craft",
-      "file": "onecraft-0.4.1-20261108-0757.jar",
-      "url": "https://raw.githubusercontent.com/vLilMike/OneCraftLauncher/main/mods/onecraft-0.4.1-20261108-0757.jar",
-      "sha1": "ed8521dccffd22afb4af301783a732cab24abb49"
+      "file": "onecraft-0.4.1-20261108-0814.jar",
+      "url": "https://raw.githubusercontent.com/vLilMike/OneCraftLauncher/main/mods/onecraft-0.4.1-20261108-0814.jar",
+      "sha1": "75ea5578a8f5f05f97de525740f88601383f59c3"
     },
     {
       "id": "rpessentials",
@@ -59,6 +59,7 @@
         "The Bounty Board is for Marines only. Everyone else can buy a newspaper from a News Coo to see who's wanted.",
         "Your fighting style is picked in the character creator and kept for good, unless the server allows changing it.",
         "Harbours are built on cleaner ground: no more pits, puddles and bare dirt patches around the docks.",
+        "One Craft is now played on the official server only, so everyone shares the same Blue Planet.",
         "Played during the beta? You now wear a gold BETA badge by your name in chat and the player list, for good.",
         "Simple Voice Chat now comes with the launcher: talk to players near you. Press V to set it up the first time, and hold Caps Lock to talk.",
         "Minecraft capes now hang properly from your character while running, instead of sliding down your back.",
