@@ -39,6 +39,13 @@
       "file": "jei-1.21.1-neoforge-19.70.0.468.jar",
       "url": "https://cdn.modrinth.com/data/u6dRKJwZ/versions/j41QZiGx/jei-1.21.1-neoforge-19.70.0.468.jar",
       "sha1": "92a2075b6085a3f05c36e59ad5aed6036dd748e4"
+    },
+    {
+      "id": "voicechat",
+      "name": "Simple Voice Chat",
+      "file": "voicechat-neoforge-1.21.1-2.6.27.jar",
+      "url": "https://cdn.modrinth.com/data/9eGKb6K1/versions/iR08ksVF/voicechat-neoforge-1.21.1-2.6.27.jar",
+      "sha1": "8aded3a22614a8e1641973623e7817dccea513fa"
     }
   ],
   "news": [
@@ -52,6 +59,7 @@
         "The Bounty Board is for Marines only. Everyone else can buy a newspaper from a News Coo to see who's wanted.",
         "Your fighting style is picked in the character creator and kept for good, unless the server allows changing it.",
         "Harbours are built on cleaner ground: no more pits, puddles and bare dirt patches around the docks.",
+        "Simple Voice Chat now comes with the launcher: talk to players near you. Press V to set it up the first time, and hold Caps Lock to talk.",
         "Minecraft capes now hang properly from your character while running, instead of sliding down your back.",
         "RP Essentials 1.2: the server now keeps a log of who breaks and places blocks, so staff can check and undo griefing, and autoclickers are caught."
       ]
