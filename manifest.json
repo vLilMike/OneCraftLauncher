@@ -15,9 +15,9 @@
     {
       "id": "onecraft",
       "name": "One Craft",
-      "file": "onecraft-0.4.1-20261107-2313.jar",
-      "url": "https://raw.githubusercontent.com/vLilMike/OneCraftLauncher/main/mods/onecraft-0.4.1-20261107-2313.jar",
-      "sha1": "45368d5505350740dadb0d2d848ca44733bf7054"
+      "file": "onecraft-0.4.1-20261108-0757.jar",
+      "url": "https://raw.githubusercontent.com/vLilMike/OneCraftLauncher/main/mods/onecraft-0.4.1-20261108-0757.jar",
+      "sha1": "ed8521dccffd22afb4af301783a732cab24abb49"
     },
     {
       "id": "rpessentials",
@@ -52,6 +52,7 @@
         "The Bounty Board is for Marines only. Everyone else can buy a newspaper from a News Coo to see who's wanted.",
         "Your fighting style is picked in the character creator and kept for good, unless the server allows changing it.",
         "Harbours are built on cleaner ground: no more pits, puddles and bare dirt patches around the docks.",
+        "Minecraft capes now hang properly from your character while running, instead of sliding down your back.",
         "RP Essentials 1.2: the server now keeps a log of who breaks and places blocks, so staff can check and undo griefing, and autoclickers are caught."
       ]
     },
