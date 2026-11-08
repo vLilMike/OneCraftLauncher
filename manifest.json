@@ -22,9 +22,9 @@
     {
       "id": "rpessentials",
       "name": "RP Essentials",
-      "file": "rpessentials-1.2.0.jar",
-      "url": "https://raw.githubusercontent.com/vLilMike/OneCraftLauncher/main/mods/rpessentials-1.2.0.jar",
-      "sha1": "0580d2c684d686f58f783c8d6d6573163944d5a7"
+      "file": "rpessentials-1.3.0.jar",
+      "url": "https://raw.githubusercontent.com/vLilMike/OneCraftLauncher/main/mods/rpessentials-1.3.0.jar",
+      "sha1": "a6756e4f5f5482ef5055a8b9026965747cad200d"
     },
     {
       "id": "geckolib",
@@ -59,6 +59,7 @@
         "The Bounty Board is for Marines only. Everyone else can buy a newspaper from a News Coo to see who's wanted.",
         "Your fighting style is picked in the character creator and kept for good, unless the server allows changing it.",
         "Harbours are built on cleaner ground: no more pits, puddles and bare dirt patches around the docks.",
+        "Played during the beta? You now wear a gold BETA badge by your name in chat and the player list, for good.",
         "Simple Voice Chat now comes with the launcher: talk to players near you. Press V to set it up the first time, and hold Caps Lock to talk.",
         "Minecraft capes now hang properly from your character while running, instead of sliding down your back.",
         "RP Essentials 1.2: the server now keeps a log of who breaks and places blocks, so staff can check and undo griefing, and autoclickers are caught."
