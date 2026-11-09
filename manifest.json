@@ -22,9 +22,9 @@
     {
       "id": "rpessentials",
       "name": "RP Essentials",
-      "file": "rpessentials-1.4.0.jar",
-      "url": "https://raw.githubusercontent.com/vLilMike/OneCraftLauncher/main/mods/rpessentials-1.4.0.jar",
-      "sha1": "6e210168c6c84d8fc37fdad064f35b8ca3d41564"
+      "file": "rpessentials-1.4.1.jar",
+      "url": "https://raw.githubusercontent.com/vLilMike/OneCraftLauncher/main/mods/rpessentials-1.4.1.jar",
+      "sha1": "5af38fff29b7dbda7f9068c99c5db906a6443391"
     },
     {
       "id": "geckolib",
@@ -58,7 +58,8 @@
         "The Red Line now has a passage between the North Blue and East Blue and one between the West Blue and South Blue. Nobody can build on the Red Line or climb it.",
         "Perfect guard: raise your guard just as a basic left-click hit lands to block it completely and stagger the attacker for 2 seconds. Devil Fruit moves and techniques are only blocked normally.",
         "Holding guard while your last swing finishes now raises it as soon as the swing ends, so heavy weapons and Two and Three Sword Style no longer leave you open.",
-        "The clash bar sits a little lower on screen, still clear of your hotbar."
+        "The clash bar sits a little lower on screen, still clear of your hotbar.",
+        "RP Essentials 1.4.1: names next to the BETA badge show properly again in join and leave messages, the player list and name tags."
       ]
     },
     {
