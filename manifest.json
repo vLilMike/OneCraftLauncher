@@ -50,13 +50,12 @@
   ],
   "news": [
     {
-      "title": "One Craft 0.4.1: a closer Blue Planet",
+      "title": "One Craft 0.4.1: every voyage begins in the East Blue",
       "date": "2026-11-08",
       "lines": [
-        "The Blue Planet is half its old size. The seas now sit about 12,000 blocks apart instead of 24,000, so voyages between them are shorter and crews meet up more often.",
-        "The Grand Line, the Calm Belts and the Red Line shrank to match. The biggest islands are a little smaller so they still fit the narrower Grand Line.",
+        "Every crew now sets sail from the East Blue. The other seas are still out there for you to sail to.",
         "Some large port islands now get a Grand Coastal Harbor: a great stone arch over the water, a market plaza with a fountain, and a town climbing the hill behind it.",
-        "The new map needs a new world, so the server starts fresh with this update.",
+        "Much smoother server: harbours load their land before they're built instead of freezing the server, zombies no longer bog it down near towns, and harbour townsfolk now stand at their posts like the shop keepers.",
         "Fixed a server freeze caused by cartographers offering explorer maps to structures the Blue Planet does not have."
       ]
     },
