@@ -15,9 +15,9 @@
     {
       "id": "onecraft",
       "name": "One Craft",
-      "file": "onecraft-0.4.1-20261108-1849.jar",
-      "url": "https://raw.githubusercontent.com/vLilMike/OneCraftLauncher/main/mods/onecraft-0.4.1-20261108-1849.jar",
-      "sha1": "3de1048ea692c4a8b25f7c60ca413884b8f25842"
+      "file": "onecraft-0.4.1-20261108-1859.jar",
+      "url": "https://raw.githubusercontent.com/vLilMike/OneCraftLauncher/main/mods/onecraft-0.4.1-20261108-1859.jar",
+      "sha1": "45bcb4841cab414ead2d1f9fa0f98accd53e484b"
     },
     {
       "id": "rpessentials",
@@ -56,7 +56,8 @@
         "The Blue Planet is half its old size. The seas now sit about 12,000 blocks apart instead of 24,000, so voyages between them are shorter and crews meet up more often.",
         "The Grand Line, the Calm Belts and the Red Line shrank to match. The biggest islands are a little smaller so they still fit the narrower Grand Line.",
         "Some large port islands now get a Grand Coastal Harbor: a great stone arch over the water, a market plaza with a fountain, and a town climbing the hill behind it.",
-        "The new map needs a new world, so the server starts fresh with this update."
+        "The new map needs a new world, so the server starts fresh with this update.",
+        "Fixed a server freeze caused by cartographers offering explorer maps to structures the Blue Planet does not have."
       ]
     },
     {
