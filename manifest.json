@@ -1,6 +1,6 @@
 {
   "name": "One Craft",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "minecraft": "1.21.1",
   "neoforge": "21.1.265",
   "tagline": "Set sail across the Blue Planet",
@@ -15,9 +15,9 @@
     {
       "id": "onecraft",
       "name": "One Craft",
-      "file": "onecraft-0.4.1-20261109-1130.jar",
-      "url": "https://raw.githubusercontent.com/vLilMike/OneCraftLauncher/main/mods/onecraft-0.4.1-20261109-1130.jar",
-      "sha1": "bd496319a433e2ee57fcc20a47b87b520295cfab"
+      "file": "onecraft-0.4.2-20261110-1232.jar",
+      "url": "https://raw.githubusercontent.com/vLilMike/OneCraftLauncher/main/mods/onecraft-0.4.2-20261110-1232.jar",
+      "sha1": "bb9407a2bfc9cfecdd1513a1bb7bb75ef7697b3e"
     },
     {
       "id": "rpessentials",
@@ -49,6 +49,24 @@
     }
   ],
   "news": [
+    {
+      "title": "One Craft 0.4.2: stronger stats, Devil Fruit mastery and a smarter wallet",
+      "date": "2026-11-10",
+      "lines": [
+        "Every level now gives twice the stat points, and you get the points you missed for the levels you already have the next time you log in.",
+        "New Devil Fruit stat: put points into it to make your fruit hit harder. Health also gives more per point now.",
+        "Bonus skill points at level milestones: 3 at level 5, 5 at level 10, 3 at level 12 and 4 at level 15.",
+        "Your wallet now picks up Beli off the ground by itself and has two more rows inside. Wallets sell at the Grocer for 200 Beli, and handcuffs for 150,000.",
+        "Lock your backpack so nobody else can open it.",
+        "A gold outline on your hunger bar now shows hidden saturation, and the food in your hand previews what eating it gives.",
+        "Shipwrights now trade at Marine bases, so you can buy repair kits there.",
+        "Sea Kings are calmer, slower and hit you and your ship for less. Logia flight now costs a bit more stamina.",
+        "Pirate hideouts can now offer clothes with traits in their barters, and one wool crafts into 4 string.",
+        "Lightning powers now crackle with Minecraft's own thunder.",
+        "Paste a DragonMineZ hair code into the hair editor to bring that hairstyle into One Craft.",
+        "The Multiplayer button is now Play One Craft and takes you straight to the server, which also fixes players being kicked right after joining."
+      ]
+    },
     {
       "title": "One Craft 0.4.1: Raw Materials, pricier ships and a mission compass",
       "date": "2026-11-09",
