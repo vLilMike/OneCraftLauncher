@@ -15,9 +15,9 @@
     {
       "id": "onecraft",
       "name": "One Craft",
-      "file": "onecraft-0.4.2-20261110-1232.jar",
-      "url": "https://raw.githubusercontent.com/vLilMike/OneCraftLauncher/main/mods/onecraft-0.4.2-20261110-1232.jar",
-      "sha1": "bb9407a2bfc9cfecdd1513a1bb7bb75ef7697b3e"
+      "file": "onecraft-0.4.2-20261110-1702.jar",
+      "url": "https://raw.githubusercontent.com/vLilMike/OneCraftLauncher/main/mods/onecraft-0.4.2-20261110-1702.jar",
+      "sha1": "c6d5e9494187c65e9e06ce9b0973529c065ea33a"
     },
     {
       "id": "rpessentials",
@@ -49,6 +49,20 @@
     }
   ],
   "news": [
+    {
+      "title": "One Craft 0.4.2: the Lord of the Coast rises",
+      "date": "2026-11-10",
+      "lines": [
+        "World boss: the Lord of the Coast, a giant Sea King, can now rise in the four Blues. It flees across the sea first, so chase it by ship, then fight it in three stages. Firearms stagger it, and it lowers its head after its biggest attacks. Your ships are safe from its attacks.",
+        "Click [Track Boss] in chat to follow it with a beacon. Defeat it for 1 to 3 Sea King Scales (only found from this boss), 2 traited items, Beli and a 10% chance of a Devil Fruit.",
+        "Every town now has a Barterer near the port stalls, and every Marine fort has a Marine Quartermaster trading Marine gear. Their stock refreshes every day.",
+        "Bounty hunters must now cuff a beaten pirate band to finish a crew mission, and anyone can hand a cuffed pirate over to the Marines for a tenth of their bounty and some Marine standing. Marines can bounty hunt too.",
+        "A new Records page counts the players and enemies you've defeated, missions, crew missions and the bounties you've captured.",
+        "Sea Charts now remember the real land everywhere you've sailed, with better painting and hill shading. Only Navigators can set a course.",
+        "Lightning Rush runs on water and is faster, dial attacks now grow with your Strength, and lightning moves have new sounds.",
+        "Iron axes are craftable again, and saturation now outlines your food bar and speeds up health regeneration."
+      ]
+    },
     {
       "title": "One Craft 0.4.2: stronger stats, Devil Fruit mastery and a smarter wallet",
       "date": "2026-11-10",
