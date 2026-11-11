@@ -1,6 +1,6 @@
 {
   "name": "One Craft",
-  "version": "0.4.2",
+  "version": "0.4.3",
   "minecraft": "1.21.1",
   "neoforge": "21.1.265",
   "tagline": "Set sail across the Blue Planet",
@@ -15,9 +15,9 @@
     {
       "id": "onecraft",
       "name": "One Craft",
-      "file": "onecraft-0.4.2-20261110-1841.jar",
-      "url": "https://raw.githubusercontent.com/vLilMike/OneCraftLauncher/main/mods/onecraft-0.4.2-20261110-1841.jar",
-      "sha1": "b2f88a2abb6b221ed25e5b394c3830810f09fbfc"
+      "file": "onecraft-0.4.3-20261110-2018.jar",
+      "url": "https://raw.githubusercontent.com/vLilMike/OneCraftLauncher/main/mods/onecraft-0.4.3-20261110-2018.jar",
+      "sha1": "674018c3582e7adf35e99078e18f76b64bcb7514"
     },
     {
       "id": "rpessentials",
@@ -49,6 +49,14 @@
     }
   ],
   "news": [
+    {
+      "title": "One Craft 0.4.3: no more hitting your own crew",
+      "date": "2026-11-10",
+      "lines": [
+        "Crewmates can't hurt each other any more: fists, blades, guns, arrows, Devil Fruit moves and Dial shots all pass your own crew or Marine squad by, and area attacks skip them too. Captains can turn Friendly Fire on in the crew menu's Settings for sparring.",
+        "Ships left out on the water can now be brought in by an operator. Nothing is lost: the ship goes back to its captain as a deed, hold and all."
+      ]
+    },
     {
       "title": "One Craft 0.4.2: real swings, ship radios and elemental Dial shots",
       "date": "2026-11-10",
