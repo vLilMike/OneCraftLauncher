@@ -50,6 +50,17 @@
   ],
   "news": [
     {
+      "title": "One Craft 0.4.3: steady decks and fair harbours",
+      "date": "2026-11-11",
+      "lines": [
+        "Crewmates no longer seem to slide around a sailing ship's deck: they stay planted where they stand and walk normally.",
+        "Fixed a crash near Crew Flags.",
+        "The Cutting Table and Treatment Table have their own recipes now: the Cutting Table takes shears, the Treatment Table red dye.",
+        "Conqueror's Haki, Advanced Conqueror's and Future Sight are now reserved for operators. If you had them, your skill points have been refunded. Armament and Observation Haki are unchanged.",
+        "Fixed an exploit that duplicated the contents of crates and chests placed where building isn't allowed."
+      ]
+    },
+    {
       "title": "One Craft 0.4.3: no more hitting your own crew",
       "date": "2026-11-10",
       "lines": [
