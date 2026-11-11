@@ -15,9 +15,9 @@
     {
       "id": "onecraft",
       "name": "One Craft",
-      "file": "onecraft-0.4.2-20261110-1702.jar",
-      "url": "https://raw.githubusercontent.com/vLilMike/OneCraftLauncher/main/mods/onecraft-0.4.2-20261110-1702.jar",
-      "sha1": "c6d5e9494187c65e9e06ce9b0973529c065ea33a"
+      "file": "onecraft-0.4.2-20261110-1841.jar",
+      "url": "https://raw.githubusercontent.com/vLilMike/OneCraftLauncher/main/mods/onecraft-0.4.2-20261110-1841.jar",
+      "sha1": "b2f88a2abb6b221ed25e5b394c3830810f09fbfc"
     },
     {
       "id": "rpessentials",
@@ -49,6 +49,19 @@
     }
   ],
   "news": [
+    {
+      "title": "One Craft 0.4.2: real swings, ship radios and elemental Dial shots",
+      "date": "2026-11-10",
+      "lines": [
+        "Every weapon's attacks now wind up before they strike: you see the fist drawn back or the blade cocked before the hit lands. Swings flow through instead of snapping between poses, one-handed blades turn with the wrist, and two-handed weapons cut at full reach. Combos keep the same pace.",
+        "Ship Radio: open your ship's menu, paste a YouTube link and press Play. Everyone near the ship hears it, in sync. The captain and crew pick the music, and anyone can mute radios for themselves. The first time you hear one, the game downloads a small player for it.",
+        "Musicians: when you play your own MP3s, everyone nearby now hears the song too. The rhythm game also stays locked to the music, and a new Timing setting lets you nudge it to match your speakers.",
+        "Sea Shanty now gives Luck of the Sea: better fishing, rare catches twice as likely, and extra loot the first time you open a treasure chest.",
+        "Elemental Dials can shoot: Alt + right-click with a Flame, Ice, Lightning, Water or Wind Dial in hand or in your Dial Slot. Each shot uses a little of its charge.",
+        "Strength now grows slowly from hard work too: mining, chopping, jumping and swimming. Punching still trains it fastest.",
+        "The Lord of the Coast's chase is now about half as long, and it swims slower than a Rowboat so everyone can keep up."
+      ]
+    },
     {
       "title": "One Craft 0.4.2: the Lord of the Coast rises",
       "date": "2026-11-10",
