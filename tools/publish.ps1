@@ -14,10 +14,9 @@ function Publish([string]$id, [string]$source) {
     $jar = Get-ChildItem $source | Sort-Object LastWriteTime -Descending | Select-Object -First 1
     if (-not $jar) { Write-Warning "No JAR found for $id at $source"; return $null }
     $entry = $m.mods | Where-Object { $_.id -eq $id }
-    if ($entry.file -ne $jar.Name) {
-        Get-ChildItem $mods -Filter $entry.file -ErrorAction SilentlyContinue | Remove-Item
-        Copy-Item $jar.FullName (Join-Path $mods $jar.Name)
-    }
+    # Always copy: a rebuilt JAR can keep the same file name (same version), and must still replace the old one.
+    if ($entry.file -ne $jar.Name) { Get-ChildItem $mods -Filter $entry.file -ErrorAction SilentlyContinue | Remove-Item }
+    Copy-Item $jar.FullName (Join-Path $mods $jar.Name) -Force
     $entry.file = $jar.Name
     $entry.url = $raw + $jar.Name
     $entry.sha1 = (Get-FileHash (Join-Path $mods $jar.Name) -Algorithm SHA1).Hash.ToLower()
