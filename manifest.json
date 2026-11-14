@@ -1,213 +1,222 @@
-{
-  "name": "One Craft",
-  "version": "0.4.3",
-  "minecraft": "1.21.1",
-  "neoforge": "21.1.265",
-  "tagline": "Set sail across the Blue Planet",
-  "clientId": "e87154b1-c20f-406c-af4a-09036141e40d",
-  "signIn": false,
-  "launcher": {
-    "version": "1.1.1",
-    "url": "https://raw.githubusercontent.com/vLilMike/OneCraftLauncher/main/download/OneCraftLauncher.exe"
-  },
-  "servers": [],
-  "mods": [
-    {
-      "id": "onecraft",
-      "name": "One Craft",
-      "file": "onecraft-0.4.3-20261111-1018.jar",
-      "url": "https://raw.githubusercontent.com/vLilMike/OneCraftLauncher/main/mods/onecraft-0.4.3-20261111-1018.jar",
-      "sha1": "6c342f32d42532c2385615650c84e5a9fe918403"
-    },
-    {
-      "id": "rpessentials",
-      "name": "RP Essentials",
-      "file": "rpessentials-1.4.1.jar",
-      "url": "https://raw.githubusercontent.com/vLilMike/OneCraftLauncher/main/mods/rpessentials-1.4.1.jar",
-      "sha1": "5af38fff29b7dbda7f9068c99c5db906a6443391"
-    },
-    {
-      "id": "geckolib",
-      "name": "GeckoLib",
-      "file": "geckolib-neoforge-1.21.1-4.7.7.jar",
-      "url": "https://cdn.modrinth.com/data/8BmcQJ2H/versions/18qeSgOb/geckolib-neoforge-1.21.1-4.7.7.jar",
-      "sha1": "36883f8ea9117932bb5f2643a29578c6506e2339"
-    },
-    {
-      "id": "jei",
-      "name": "Just Enough Items",
-      "file": "jei-1.21.1-neoforge-19.70.0.468.jar",
-      "url": "https://cdn.modrinth.com/data/u6dRKJwZ/versions/j41QZiGx/jei-1.21.1-neoforge-19.70.0.468.jar",
-      "sha1": "92a2075b6085a3f05c36e59ad5aed6036dd748e4"
-    },
-    {
-      "id": "voicechat",
-      "name": "Simple Voice Chat",
-      "file": "voicechat-neoforge-1.21.1-2.6.27.jar",
-      "url": "https://cdn.modrinth.com/data/9eGKb6K1/versions/iR08ksVF/voicechat-neoforge-1.21.1-2.6.27.jar",
-      "sha1": "8aded3a22614a8e1641973623e7817dccea513fa"
-    }
-  ],
-  "news": [
-    {
-      "title": "One Craft 0.4.3: steady decks and fair harbours",
-      "date": "2026-11-11",
-      "lines": [
-        "Crewmates no longer seem to slide around a sailing ship's deck: they stay planted where they stand and walk normally.",
-        "Fixed a crash near Crew Flags.",
-        "The Cutting Table and Treatment Table have their own recipes now: the Cutting Table takes shears, the Treatment Table red dye.",
-        "Conqueror's Haki, Advanced Conqueror's and Future Sight are now reserved for operators. If you had them, your skill points have been refunded. Armament and Observation Haki are unchanged.",
-        "Fixed an exploit that duplicated the contents of crates and chests placed where building isn't allowed."
-      ]
-    },
-    {
-      "title": "One Craft 0.4.3: no more hitting your own crew",
-      "date": "2026-11-10",
-      "lines": [
-        "Crewmates can't hurt each other any more: fists, blades, guns, arrows, Devil Fruit moves and Dial shots all pass your own crew or Marine squad by, and area attacks skip them too. Captains can turn Friendly Fire on in the crew menu's Settings for sparring.",
-        "Ships left out on the water can now be brought in by an operator. Nothing is lost: the ship goes back to its captain as a deed, hold and all."
-      ]
-    },
-    {
-      "title": "One Craft 0.4.2: real swings, ship radios and elemental Dial shots",
-      "date": "2026-11-10",
-      "lines": [
-        "Every weapon's attacks now wind up before they strike: you see the fist drawn back or the blade cocked before the hit lands. Swings flow through instead of snapping between poses, one-handed blades turn with the wrist, and two-handed weapons cut at full reach. Combos keep the same pace.",
-        "Ship Radio: open your ship's menu, paste a YouTube link and press Play. Everyone near the ship hears it, in sync. The captain and crew pick the music, and anyone can mute radios for themselves. The first time you hear one, the game downloads a small player for it.",
-        "Musicians: when you play your own MP3s, everyone nearby now hears the song too. The rhythm game also stays locked to the music, and a new Timing setting lets you nudge it to match your speakers.",
-        "Sea Shanty now gives Luck of the Sea: better fishing, rare catches twice as likely, and extra loot the first time you open a treasure chest.",
-        "Elemental Dials can shoot: Alt + right-click with a Flame, Ice, Lightning, Water or Wind Dial in hand or in your Dial Slot. Each shot uses a little of its charge.",
-        "Strength now grows slowly from hard work too: mining, chopping, jumping and swimming. Punching still trains it fastest.",
-        "The Lord of the Coast's chase is now about half as long, and it swims slower than a Rowboat so everyone can keep up."
-      ]
-    },
-    {
-      "title": "One Craft 0.4.2: the Lord of the Coast rises",
-      "date": "2026-11-10",
-      "lines": [
-        "World boss: the Lord of the Coast, a giant Sea King, can now rise in the four Blues. It flees across the sea first, so chase it by ship, then fight it in three stages. Firearms stagger it, and it lowers its head after its biggest attacks. Your ships are safe from its attacks.",
-        "Click [Track Boss] in chat to follow it with a beacon. Defeat it for 1 to 3 Sea King Scales (only found from this boss), 2 traited items, Beli and a 10% chance of a Devil Fruit.",
-        "Every town now has a Barterer near the port stalls, and every Marine fort has a Marine Quartermaster trading Marine gear. Their stock refreshes every day.",
-        "Bounty hunters must now cuff a beaten pirate band to finish a crew mission, and anyone can hand a cuffed pirate over to the Marines for a tenth of their bounty and some Marine standing. Marines can bounty hunt too.",
-        "A new Records page counts the players and enemies you've defeated, missions, crew missions and the bounties you've captured.",
-        "Sea Charts now remember the real land everywhere you've sailed, with better painting and hill shading. Only Navigators can set a course.",
-        "Lightning Rush runs on water and is faster, dial attacks now grow with your Strength, and lightning moves have new sounds.",
-        "Iron axes are craftable again, and saturation now outlines your food bar and speeds up health regeneration."
-      ]
-    },
-    {
-      "title": "One Craft 0.4.2: stronger stats, Devil Fruit mastery and a smarter wallet",
-      "date": "2026-11-10",
-      "lines": [
-        "Every level now gives twice the stat points, and you get the points you missed for the levels you already have the next time you log in.",
-        "New Devil Fruit stat: put points into it to make your fruit hit harder. Health also gives more per point now.",
-        "Bonus skill points at level milestones: 3 at level 5, 5 at level 10, 3 at level 12 and 4 at level 15.",
-        "Your wallet now picks up Beli off the ground by itself and has two more rows inside. Wallets sell at the Grocer for 200 Beli, and handcuffs for 150,000.",
-        "Lock your backpack so nobody else can open it.",
-        "A gold outline on your hunger bar now shows hidden saturation, and the food in your hand previews what eating it gives.",
-        "Shipwrights now trade at Marine bases, so you can buy repair kits there.",
-        "Sea Kings are calmer, slower and hit you and your ship for less. Logia flight now costs a bit more stamina.",
-        "Pirate hideouts can now offer clothes with traits in their barters, and one wool crafts into 4 string.",
-        "Lightning powers now crackle with Minecraft's own thunder.",
-        "Paste a DragonMineZ hair code into the hair editor to bring that hairstyle into One Craft.",
-        "The Multiplayer button is now Play One Craft and takes you straight to the server, which also fixes players being kicked right after joining."
-      ]
-    },
-    {
-      "title": "One Craft 0.4.1: Raw Materials, pricier ships and a mission compass",
-      "date": "2026-11-09",
-      "lines": [
-        "A new Raw Materials stall at the big harbours sells logs, ores, leather, wool, ender pearls and more for Beli, and the Grocer now stocks every raw meat.",
-        "Ships are a real voyage to build now: twice the timber, half again the wool and four times the iron. One wool now spins 8 Stringed Wool.",
-        "Every mission now gives you a compass that points to its target, and character names show over heads, in chat and in the tab list.",
-        "Helmsmen sail faster: Novice +6%, Skilled +10%, Veteran +15%. Plus fresh skill icons and smoother mob spawning on servers."
-      ]
-    },
-    {
-      "title": "One Craft 0.4.1: every voyage begins in the East Blue",
-      "date": "2026-11-08",
-      "lines": [
-        "Every crew now sets sail from the East Blue. The other seas are still out there for you to sail to.",
-        "Some large port islands now get a Grand Coastal Harbor: a great stone arch over the water, a market plaza with a fountain, and a town climbing the hill behind it.",
-        "Much smoother server: harbours load their land before they're built instead of freezing the server, zombies no longer bog it down near towns, and harbour townsfolk now stand at their posts like the shop keepers.",
-        "Fixed a server freeze caused by cartographers offering explorer maps to structures the Blue Planet does not have."
-      ]
-    },
-    {
-      "title": "One Craft 0.4.1: Baratie, Foosha Village and combat",
-      "date": "2026-11-08",
-      "lines": [
-        "The Baratie floats somewhere in the East Blue: one per world, with docks on three sides so several ships can tie up. It can't be broken or built on, and no mobs spawn aboard.",
-        "Foosha Village on Dawn Island in the East Blue: windmills, fields, the plaza well, and Makino serving food and drink at Partys Bar.",
-        "The Red Line now has a passage between the North Blue and East Blue and one between the West Blue and South Blue. Nobody can build on the Red Line or climb it.",
-        "Perfect guard: raise your guard just as a basic left-click hit lands to block it completely and stagger the attacker for 2 seconds. Devil Fruit moves and techniques are only blocked normally.",
-        "Holding guard while your last swing finishes now raises it as soon as the swing ends, so heavy weapons and Two and Three Sword Style no longer leave you open.",
-        "The clash bar sits a little lower on screen, still clear of your hotbar.",
-        "RP Essentials 1.4.1: names next to the BETA badge show properly again in join and leave messages, the player list and name tags."
-      ]
-    },
-    {
-      "title": "One Craft 0.4.1 update",
-      "date": "2026-11-08",
-      "lines": [
-        "New players now arrive at the One Craft hub. Make your character there, then type /setsail to leave for your sea. /hub brings you back any time.",
-        "/serverrules and /gettingstarted tell you everything you need to begin.",
-        "A fresh One Craft logo on the title screen.",
-        "A clock and date now sit beside your status plate. Every voyage starts on 1 January 1755.",
-        "Press ] to open the calendar: the month at a glance, moon phases, season and today's weather.",
-        "New Settings button (the cogwheel on your Character Record): change the size of the menus and HUD, and switch HUD pieces and camera effects on or off.",
-        "The Bounty Board is for Marines only. Everyone else can buy a newspaper from a News Coo to see who's wanted.",
-        "Your fighting style is picked in the character creator and kept for good, unless the server allows changing it.",
-        "Harbours are built on cleaner ground: no more pits, puddles and bare dirt patches around the docks.",
-        "One Craft is now played on the official server only, so everyone shares the same Blue Planet.",
-        "Played during the beta? You now wear a gold BETA badge by your name in chat and the player list, for good.",
-        "Simple Voice Chat now comes with the launcher: talk to players near you. Press V to set it up the first time, and hold Caps Lock to talk.",
-        "Minecraft capes now hang properly from your character while running, instead of sliding down your back.",
-        "RP Essentials 1.2: the server now keeps a log of who breaks and places blocks, so staff can check and undo griefing, and autoclickers are caught."
-      ]
-    },
-    {
-      "title": "One Craft 0.4.1",
-      "date": "2026-11-07",
-      "lines": [
-        "Just Enough Items (JEI) now comes with the launcher, so you can look up any recipe in game.",
-        "Buy land for your crew: plant a Crew Flag, then right-click it to buy the chunks around it with Beli.",
-        "Crew Flags fly your Jolly Roger, and you can now import a picture as your Jolly Roger in the crew menu.",
-        "Every port's starter chest now holds a Sea Chart, and Sea Charts craft from 3 paper and any dye.",
-        "RP Essentials 1.1: /sethome, /home, /spawn and /back, veinmining (hold the ` key while mining) and fast leaf decay.",
-        "Ships sail at a steadier pace: the wind still helps or slows you, and storms no longer wreck your speed.",
-        "Fixes for Marine sail lettering, draped coats and boots while running, and getting stuck in the harbour on your first spawn.",
-        "Worlds made before 0.4.1 lose their One Craft blocks and items, so start a new world."
-      ]
-    },
-    {
-      "title": "One Craft Launcher 1.1.0",
-      "date": "2026-11-07",
-      "lines": [
-        "Sign in with your Microsoft account right here in the launcher, then PLAY starts One Craft directly. This turns on as soon as Mojang approves the launcher.",
-        "Until then, PLAY keeps using the official Minecraft Launcher, just like before.",
-        "Faster game settings out of the box: tuned Java memory cleanup for smoother play.",
-        "Settings has a new switch to keep using the official Minecraft Launcher if you prefer it."
-      ]
-    },
-    {
-      "title": "One Craft Launcher 1.0.0",
-      "date": "2026-11-07",
-      "lines": [
-        "The One Craft Launcher is here. Press PLAY and it sets up NeoForge, GeckoLib, RP Essentials and One Craft for you.",
-        "Mods update themselves: every time you press PLAY the launcher checks for a newer One Craft and downloads it.",
-        "One Craft keeps its own game folder, so your other Minecraft worlds and mods are never touched.",
-        "Sign-in goes through the official Minecraft Launcher. Pick the One Craft profile there and press Play."
-      ]
-    },
-    {
-      "title": "One Craft 0.4.0",
-      "date": "2026-11-07",
-      "lines": [
-        "Horses got a full visual rework: longer manes, fuller tails and feathered hooves.",
-        "Studs and spawn eggs for all 15 horse breeds, smaller wild herds and leather drops.",
-        "A themed riding HUD while you're in the saddle."
-      ]
-    }
-  ]
+﻿{
+    "name":  "One Craft",
+    "version":  "1.0.0",
+    "minecraft":  "1.21.1",
+    "neoforge":  "21.1.265",
+    "tagline":  "Set sail across the Blue Planet",
+    "clientId":  "e87154b1-c20f-406c-af4a-09036141e40d",
+    "signIn":  false,
+    "launcher":  {
+                     "version":  "1.1.1",
+                     "url":  "https://raw.githubusercontent.com/vLilMike/OneCraftLauncher/main/download/OneCraftLauncher.exe"
+                 },
+    "servers":  [
+
+                ],
+    "mods":  [
+                 {
+                     "id":  "onecraft",
+                     "name":  "One Craft",
+                     "file":  "onecraft-1.0.0-20261113-1744.jar",
+                     "url":  "https://raw.githubusercontent.com/vLilMike/OneCraftLauncher/main/mods/onecraft-1.0.0-20261113-1744.jar",
+                     "sha1":  "c39dd07d172444d7bad6ba2b2532b8c4aab6f96d"
+                 },
+                 {
+                     "id":  "rpessentials",
+                     "name":  "RP Essentials",
+                     "file":  "rpessentials-2.5.0.jar",
+                     "url":  "https://raw.githubusercontent.com/vLilMike/OneCraftLauncher/main/mods/rpessentials-2.5.0.jar",
+                     "sha1":  "9c6e78cfcc67fa8e304b211f83208378346653f0"
+                 },
+                 {
+                     "id":  "geckolib",
+                     "name":  "GeckoLib",
+                     "file":  "geckolib-neoforge-1.21.1-4.7.7.jar",
+                     "url":  "https://cdn.modrinth.com/data/8BmcQJ2H/versions/18qeSgOb/geckolib-neoforge-1.21.1-4.7.7.jar",
+                     "sha1":  "36883f8ea9117932bb5f2643a29578c6506e2339"
+                 },
+                 {
+                     "id":  "jei",
+                     "name":  "Just Enough Items",
+                     "file":  "jei-1.21.1-neoforge-19.70.0.468.jar",
+                     "url":  "https://cdn.modrinth.com/data/u6dRKJwZ/versions/j41QZiGx/jei-1.21.1-neoforge-19.70.0.468.jar",
+                     "sha1":  "92a2075b6085a3f05c36e59ad5aed6036dd748e4"
+                 },
+                 {
+                     "id":  "voicechat",
+                     "name":  "Simple Voice Chat",
+                     "file":  "voicechat-neoforge-1.21.1-2.6.27.jar",
+                     "url":  "https://cdn.modrinth.com/data/9eGKb6K1/versions/iR08ksVF/voicechat-neoforge-1.21.1-2.6.27.jar",
+                     "sha1":  "8aded3a22614a8e1641973623e7817dccea513fa"
+                 }
+             ],
+    "news":  [
+                 {
+                     "title":  "One Craft 1.0.0",
+                     "date":  "2026-11-13",
+                     "lines":  [
+                                   "New races: Tontatta, and the female-only Kuja with a snake companion that becomes a bow"
+                               ]
+                 },
+                 {
+                     "title":  "One Craft 0.4.3: steady decks and fair harbours",
+                     "date":  "2026-11-11",
+                     "lines":  [
+                                   "Crewmates no longer seem to slide around a sailing ship\u0027s deck: they stay planted where they stand and walk normally.",
+                                   "Fixed a crash near Crew Flags.",
+                                   "The Cutting Table and Treatment Table have their own recipes now: the Cutting Table takes shears, the Treatment Table red dye.",
+                                   "Conqueror\u0027s Haki, Advanced Conqueror\u0027s and Future Sight are now reserved for operators. If you had them, your skill points have been refunded. Armament and Observation Haki are unchanged.",
+                                   "Fixed an exploit that duplicated the contents of crates and chests placed where building isn\u0027t allowed."
+                               ]
+                 },
+                 {
+                     "title":  "One Craft 0.4.3: no more hitting your own crew",
+                     "date":  "2026-11-10",
+                     "lines":  [
+                                   "Crewmates can\u0027t hurt each other any more: fists, blades, guns, arrows, Devil Fruit moves and Dial shots all pass your own crew or Marine squad by, and area attacks skip them too. Captains can turn Friendly Fire on in the crew menu\u0027s Settings for sparring.",
+                                   "Ships left out on the water can now be brought in by an operator. Nothing is lost: the ship goes back to its captain as a deed, hold and all."
+                               ]
+                 },
+                 {
+                     "title":  "One Craft 0.4.2: real swings, ship radios and elemental Dial shots",
+                     "date":  "2026-11-10",
+                     "lines":  [
+                                   "Every weapon\u0027s attacks now wind up before they strike: you see the fist drawn back or the blade cocked before the hit lands. Swings flow through instead of snapping between poses, one-handed blades turn with the wrist, and two-handed weapons cut at full reach. Combos keep the same pace.",
+                                   "Ship Radio: open your ship\u0027s menu, paste a YouTube link and press Play. Everyone near the ship hears it, in sync. The captain and crew pick the music, and anyone can mute radios for themselves. The first time you hear one, the game downloads a small player for it.",
+                                   "Musicians: when you play your own MP3s, everyone nearby now hears the song too. The rhythm game also stays locked to the music, and a new Timing setting lets you nudge it to match your speakers.",
+                                   "Sea Shanty now gives Luck of the Sea: better fishing, rare catches twice as likely, and extra loot the first time you open a treasure chest.",
+                                   "Elemental Dials can shoot: Alt + right-click with a Flame, Ice, Lightning, Water or Wind Dial in hand or in your Dial Slot. Each shot uses a little of its charge.",
+                                   "Strength now grows slowly from hard work too: mining, chopping, jumping and swimming. Punching still trains it fastest.",
+                                   "The Lord of the Coast\u0027s chase is now about half as long, and it swims slower than a Rowboat so everyone can keep up."
+                               ]
+                 },
+                 {
+                     "title":  "One Craft 0.4.2: the Lord of the Coast rises",
+                     "date":  "2026-11-10",
+                     "lines":  [
+                                   "World boss: the Lord of the Coast, a giant Sea King, can now rise in the four Blues. It flees across the sea first, so chase it by ship, then fight it in three stages. Firearms stagger it, and it lowers its head after its biggest attacks. Your ships are safe from its attacks.",
+                                   "Click [Track Boss] in chat to follow it with a beacon. Defeat it for 1 to 3 Sea King Scales (only found from this boss), 2 traited items, Beli and a 10% chance of a Devil Fruit.",
+                                   "Every town now has a Barterer near the port stalls, and every Marine fort has a Marine Quartermaster trading Marine gear. Their stock refreshes every day.",
+                                   "Bounty hunters must now cuff a beaten pirate band to finish a crew mission, and anyone can hand a cuffed pirate over to the Marines for a tenth of their bounty and some Marine standing. Marines can bounty hunt too.",
+                                   "A new Records page counts the players and enemies you\u0027ve defeated, missions, crew missions and the bounties you\u0027ve captured.",
+                                   "Sea Charts now remember the real land everywhere you\u0027ve sailed, with better painting and hill shading. Only Navigators can set a course.",
+                                   "Lightning Rush runs on water and is faster, dial attacks now grow with your Strength, and lightning moves have new sounds.",
+                                   "Iron axes are craftable again, and saturation now outlines your food bar and speeds up health regeneration."
+                               ]
+                 },
+                 {
+                     "title":  "One Craft 0.4.2: stronger stats, Devil Fruit mastery and a smarter wallet",
+                     "date":  "2026-11-10",
+                     "lines":  [
+                                   "Every level now gives twice the stat points, and you get the points you missed for the levels you already have the next time you log in.",
+                                   "New Devil Fruit stat: put points into it to make your fruit hit harder. Health also gives more per point now.",
+                                   "Bonus skill points at level milestones: 3 at level 5, 5 at level 10, 3 at level 12 and 4 at level 15.",
+                                   "Your wallet now picks up Beli off the ground by itself and has two more rows inside. Wallets sell at the Grocer for 200 Beli, and handcuffs for 150,000.",
+                                   "Lock your backpack so nobody else can open it.",
+                                   "A gold outline on your hunger bar now shows hidden saturation, and the food in your hand previews what eating it gives.",
+                                   "Shipwrights now trade at Marine bases, so you can buy repair kits there.",
+                                   "Sea Kings are calmer, slower and hit you and your ship for less. Logia flight now costs a bit more stamina.",
+                                   "Pirate hideouts can now offer clothes with traits in their barters, and one wool crafts into 4 string.",
+                                   "Lightning powers now crackle with Minecraft\u0027s own thunder.",
+                                   "Paste a DragonMineZ hair code into the hair editor to bring that hairstyle into One Craft.",
+                                   "The Multiplayer button is now Play One Craft and takes you straight to the server, which also fixes players being kicked right after joining."
+                               ]
+                 },
+                 {
+                     "title":  "One Craft 0.4.1: Raw Materials, pricier ships and a mission compass",
+                     "date":  "2026-11-09",
+                     "lines":  [
+                                   "A new Raw Materials stall at the big harbours sells logs, ores, leather, wool, ender pearls and more for Beli, and the Grocer now stocks every raw meat.",
+                                   "Ships are a real voyage to build now: twice the timber, half again the wool and four times the iron. One wool now spins 8 Stringed Wool.",
+                                   "Every mission now gives you a compass that points to its target, and character names show over heads, in chat and in the tab list.",
+                                   "Helmsmen sail faster: Novice +6%, Skilled +10%, Veteran +15%. Plus fresh skill icons and smoother mob spawning on servers."
+                               ]
+                 },
+                 {
+                     "title":  "One Craft 0.4.1: every voyage begins in the East Blue",
+                     "date":  "2026-11-08",
+                     "lines":  [
+                                   "Every crew now sets sail from the East Blue. The other seas are still out there for you to sail to.",
+                                   "Some large port islands now get a Grand Coastal Harbor: a great stone arch over the water, a market plaza with a fountain, and a town climbing the hill behind it.",
+                                   "Much smoother server: harbours load their land before they\u0027re built instead of freezing the server, zombies no longer bog it down near towns, and harbour townsfolk now stand at their posts like the shop keepers.",
+                                   "Fixed a server freeze caused by cartographers offering explorer maps to structures the Blue Planet does not have."
+                               ]
+                 },
+                 {
+                     "title":  "One Craft 0.4.1: Baratie, Foosha Village and combat",
+                     "date":  "2026-11-08",
+                     "lines":  [
+                                   "The Baratie floats somewhere in the East Blue: one per world, with docks on three sides so several ships can tie up. It can\u0027t be broken or built on, and no mobs spawn aboard.",
+                                   "Foosha Village on Dawn Island in the East Blue: windmills, fields, the plaza well, and Makino serving food and drink at Partys Bar.",
+                                   "The Red Line now has a passage between the North Blue and East Blue and one between the West Blue and South Blue. Nobody can build on the Red Line or climb it.",
+                                   "Perfect guard: raise your guard just as a basic left-click hit lands to block it completely and stagger the attacker for 2 seconds. Devil Fruit moves and techniques are only blocked normally.",
+                                   "Holding guard while your last swing finishes now raises it as soon as the swing ends, so heavy weapons and Two and Three Sword Style no longer leave you open.",
+                                   "The clash bar sits a little lower on screen, still clear of your hotbar.",
+                                   "RP Essentials 1.4.1: names next to the BETA badge show properly again in join and leave messages, the player list and name tags."
+                               ]
+                 },
+                 {
+                     "title":  "One Craft 0.4.1 update",
+                     "date":  "2026-11-08",
+                     "lines":  [
+                                   "New players now arrive at the One Craft hub. Make your character there, then type /setsail to leave for your sea. /hub brings you back any time.",
+                                   "/serverrules and /gettingstarted tell you everything you need to begin.",
+                                   "A fresh One Craft logo on the title screen.",
+                                   "A clock and date now sit beside your status plate. Every voyage starts on 1 January 1755.",
+                                   "Press ] to open the calendar: the month at a glance, moon phases, season and today\u0027s weather.",
+                                   "New Settings button (the cogwheel on your Character Record): change the size of the menus and HUD, and switch HUD pieces and camera effects on or off.",
+                                   "The Bounty Board is for Marines only. Everyone else can buy a newspaper from a News Coo to see who\u0027s wanted.",
+                                   "Your fighting style is picked in the character creator and kept for good, unless the server allows changing it.",
+                                   "Harbours are built on cleaner ground: no more pits, puddles and bare dirt patches around the docks.",
+                                   "One Craft is now played on the official server only, so everyone shares the same Blue Planet.",
+                                   "Played during the beta? You now wear a gold BETA badge by your name in chat and the player list, for good.",
+                                   "Simple Voice Chat now comes with the launcher: talk to players near you. Press V to set it up the first time, and hold Caps Lock to talk.",
+                                   "Minecraft capes now hang properly from your character while running, instead of sliding down your back.",
+                                   "RP Essentials 1.2: the server now keeps a log of who breaks and places blocks, so staff can check and undo griefing, and autoclickers are caught."
+                               ]
+                 },
+                 {
+                     "title":  "One Craft 0.4.1",
+                     "date":  "2026-11-07",
+                     "lines":  [
+                                   "Just Enough Items (JEI) now comes with the launcher, so you can look up any recipe in game.",
+                                   "Buy land for your crew: plant a Crew Flag, then right-click it to buy the chunks around it with Beli.",
+                                   "Crew Flags fly your Jolly Roger, and you can now import a picture as your Jolly Roger in the crew menu.",
+                                   "Every port\u0027s starter chest now holds a Sea Chart, and Sea Charts craft from 3 paper and any dye.",
+                                   "RP Essentials 1.1: /sethome, /home, /spawn and /back, veinmining (hold the ` key while mining) and fast leaf decay.",
+                                   "Ships sail at a steadier pace: the wind still helps or slows you, and storms no longer wreck your speed.",
+                                   "Fixes for Marine sail lettering, draped coats and boots while running, and getting stuck in the harbour on your first spawn.",
+                                   "Worlds made before 0.4.1 lose their One Craft blocks and items, so start a new world."
+                               ]
+                 },
+                 {
+                     "title":  "One Craft Launcher 1.1.0",
+                     "date":  "2026-11-07",
+                     "lines":  [
+                                   "Sign in with your Microsoft account right here in the launcher, then PLAY starts One Craft directly. This turns on as soon as Mojang approves the launcher.",
+                                   "Until then, PLAY keeps using the official Minecraft Launcher, just like before.",
+                                   "Faster game settings out of the box: tuned Java memory cleanup for smoother play.",
+                                   "Settings has a new switch to keep using the official Minecraft Launcher if you prefer it."
+                               ]
+                 },
+                 {
+                     "title":  "One Craft Launcher 1.0.0",
+                     "date":  "2026-11-07",
+                     "lines":  [
+                                   "The One Craft Launcher is here. Press PLAY and it sets up NeoForge, GeckoLib, RP Essentials and One Craft for you.",
+                                   "Mods update themselves: every time you press PLAY the launcher checks for a newer One Craft and downloads it.",
+                                   "One Craft keeps its own game folder, so your other Minecraft worlds and mods are never touched.",
+                                   "Sign-in goes through the official Minecraft Launcher. Pick the One Craft profile there and press Play."
+                               ]
+                 },
+                 {
+                     "title":  "One Craft 0.4.0",
+                     "date":  "2026-11-07",
+                     "lines":  [
+                                   "Horses got a full visual rework: longer manes, fuller tails and feathered hooves.",
+                                   "Studs and spawn eggs for all 15 horse breeds, smaller wild herds and leather drops.",
+                                   "A themed riding HUD while you\u0027re in the saddle."
+                               ]
+                 }
+             ]
 }
