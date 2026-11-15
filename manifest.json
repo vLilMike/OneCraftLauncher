@@ -1,6 +1,6 @@
 ﻿{
     "name":  "One Craft",
-    "version":  "1.0.0",
+    "version":  "1.0.1",
     "minecraft":  "1.21.1",
     "neoforge":  "21.1.265",
     "tagline":  "Set sail across the Blue Planet",
@@ -17,16 +17,16 @@
                  {
                      "id":  "onecraft",
                      "name":  "One Craft",
-                     "file":  "onecraft-1.0.0-20261113-1857.jar",
-                     "url":  "https://raw.githubusercontent.com/vLilMike/OneCraftLauncher/main/mods/onecraft-1.0.0-20261113-1857.jar",
-                     "sha1":  "677190949a85ca3f91d6f44efcf8edeb5539ced3"
+                     "file":  "onecraft-1.0.1-20261115-1206.jar",
+                     "url":  "https://raw.githubusercontent.com/vLilMike/OneCraftLauncher/main/mods/onecraft-1.0.1-20261115-1206.jar",
+                     "sha1":  "2a32a570c51fdc22e84e7e1c8980c87baad1886d"
                  },
                  {
                      "id":  "rpessentials",
                      "name":  "RP Essentials",
-                     "file":  "rpessentials-2.5.0.jar",
-                     "url":  "https://raw.githubusercontent.com/vLilMike/OneCraftLauncher/main/mods/rpessentials-2.5.0.jar",
-                     "sha1":  "2fea1b7c9ecf252d683914212e6b67e48e666ab2"
+                     "file":  "rpessentials-2.5.1.jar",
+                     "url":  "https://raw.githubusercontent.com/vLilMike/OneCraftLauncher/main/mods/rpessentials-2.5.1.jar",
+                     "sha1":  "d2c939e54d4fba5a634ff85cf5444ac68dd57493"
                  },
                  {
                      "id":  "geckolib",
@@ -51,6 +51,13 @@
                  }
              ],
     "news":  [
+                 {
+                     "title":  "One Craft 1.0.1",
+                     "date":  "2026-11-15",
+                     "lines":  [
+                                   "Profession Commissions: NPCs give every role work orders for 4x role EXP and Beli. Open them with the Commissions button on your role\u0027s page."
+                               ]
+                 },
                  {
                      "title":  "One Craft 1.0.0",
                      "date":  "2026-11-13",
