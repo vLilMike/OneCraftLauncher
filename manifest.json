@@ -1,6 +1,6 @@
 ﻿{
     "name":  "One Craft",
-    "version":  "1.0.1",
+    "version":  "1.0.3",
     "minecraft":  "1.21.1",
     "neoforge":  "21.1.265",
     "tagline":  "Set sail across the Blue Planet",
@@ -17,16 +17,16 @@
                  {
                      "id":  "onecraft",
                      "name":  "One Craft",
-                     "file":  "onecraft-1.0.1-20261115-1206.jar",
-                     "url":  "https://raw.githubusercontent.com/vLilMike/OneCraftLauncher/main/mods/onecraft-1.0.1-20261115-1206.jar",
-                     "sha1":  "2a32a570c51fdc22e84e7e1c8980c87baad1886d"
+                     "file":  "onecraft-1.0.3-20261116-0834.jar",
+                     "url":  "https://raw.githubusercontent.com/vLilMike/OneCraftLauncher/main/mods/onecraft-1.0.3-20261116-0834.jar",
+                     "sha1":  "6f903050a9bf3ca48038ba6844b83857bddc25e8"
                  },
                  {
                      "id":  "rpessentials",
                      "name":  "RP Essentials",
-                     "file":  "rpessentials-2.5.2.jar",
-                     "url":  "https://raw.githubusercontent.com/vLilMike/OneCraftLauncher/main/mods/rpessentials-2.5.2.jar",
-                     "sha1":  "560f12a4663f52758ae451eee0960910b3289c3d"
+                     "file":  "rpessentials-2.5.5.jar",
+                     "url":  "https://raw.githubusercontent.com/vLilMike/OneCraftLauncher/main/mods/rpessentials-2.5.5.jar",
+                     "sha1":  "2fbc3b746a7a92806438e74592683b56a869a822"
                  },
                  {
                      "id":  "geckolib",
@@ -51,6 +51,13 @@
                  }
              ],
     "news":  [
+                 {
+                     "title":  "One Craft 1.0.3",
+                     "date":  "2026-11-16",
+                     "lines":  [
+                                   "New fighting style: One Sword Style, in the character creator and the Fighting Style menu"
+                               ]
+                 },
                  {
                      "title":  "One Craft 1.0.1",
                      "date":  "2026-11-15",
