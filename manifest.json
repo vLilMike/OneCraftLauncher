@@ -24,9 +24,9 @@
                  {
                      "id":  "rpessentials",
                      "name":  "RP Essentials",
-                     "file":  "rpessentials-2.5.1.jar",
-                     "url":  "https://raw.githubusercontent.com/vLilMike/OneCraftLauncher/main/mods/rpessentials-2.5.1.jar",
-                     "sha1":  "3a915a18990d94734fb63ee48af006f91978e50f"
+                     "file":  "rpessentials-2.5.2.jar",
+                     "url":  "https://raw.githubusercontent.com/vLilMike/OneCraftLauncher/main/mods/rpessentials-2.5.2.jar",
+                     "sha1":  "560f12a4663f52758ae451eee0960910b3289c3d"
                  },
                  {
                      "id":  "geckolib",
@@ -51,6 +51,13 @@
                  }
              ],
     "news":  [
+                 {
+                     "title":  "One Craft 1.0.1",
+                     "date":  "2026-11-15",
+                     "lines":  [
+                                   "RP Essentials 2.5.2: Marine Crew Ship with brig cell gate, stuck level-up fix, chair stamina fix, Tinkerer roles card"
+                               ]
+                 },
                  {
                      "title":  "One Craft 1.0.1",
                      "date":  "2026-11-15",
