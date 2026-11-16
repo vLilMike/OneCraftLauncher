@@ -17,16 +17,16 @@
                  {
                      "id":  "onecraft",
                      "name":  "One Craft",
-                     "file":  "onecraft-1.0.3-20261116-0834.jar",
-                     "url":  "https://raw.githubusercontent.com/vLilMike/OneCraftLauncher/main/mods/onecraft-1.0.3-20261116-0834.jar",
-                     "sha1":  "6f903050a9bf3ca48038ba6844b83857bddc25e8"
+                     "file":  "onecraft-1.0.3-20261116-1137.jar",
+                     "url":  "https://raw.githubusercontent.com/vLilMike/OneCraftLauncher/main/mods/onecraft-1.0.3-20261116-1137.jar",
+                     "sha1":  "52a7cf7a91991a2928e6389dda24f6f41ca45146"
                  },
                  {
                      "id":  "rpessentials",
                      "name":  "RP Essentials",
-                     "file":  "rpessentials-2.5.5.jar",
-                     "url":  "https://raw.githubusercontent.com/vLilMike/OneCraftLauncher/main/mods/rpessentials-2.5.5.jar",
-                     "sha1":  "2fbc3b746a7a92806438e74592683b56a869a822"
+                     "file":  "rpessentials-2.5.8.jar",
+                     "url":  "https://raw.githubusercontent.com/vLilMike/OneCraftLauncher/main/mods/rpessentials-2.5.8.jar",
+                     "sha1":  "28191e3497d2a21c84ea379ae5c5556e4fffc84a"
                  },
                  {
                      "id":  "geckolib",
@@ -51,6 +51,13 @@
                  }
              ],
     "news":  [
+                 {
+                     "title":  "One Craft 1.0.3",
+                     "date":  "2026-11-16",
+                     "lines":  [
+                                   "Eight new Dial Style strikes with their own animations, element effects and Soru vanishes"
+                               ]
+                 },
                  {
                      "title":  "One Craft 1.0.3",
                      "date":  "2026-11-16",
