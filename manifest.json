@@ -17,16 +17,16 @@
                  {
                      "id":  "onecraft",
                      "name":  "One Craft",
-                     "file":  "onecraft-1.0.3-20261116-1137.jar",
-                     "url":  "https://raw.githubusercontent.com/vLilMike/OneCraftLauncher/main/mods/onecraft-1.0.3-20261116-1137.jar",
-                     "sha1":  "52a7cf7a91991a2928e6389dda24f6f41ca45146"
+                     "file":  "onecraft-1.0.3-20261117-1249.jar",
+                     "url":  "https://raw.githubusercontent.com/vLilMike/OneCraftLauncher/main/mods/onecraft-1.0.3-20261117-1249.jar",
+                     "sha1":  "142fbba7fb90e39fd14c36e5b1710f2e3e4d73c0"
                  },
                  {
                      "id":  "rpessentials",
                      "name":  "RP Essentials",
                      "file":  "rpessentials-2.5.8.jar",
                      "url":  "https://raw.githubusercontent.com/vLilMike/OneCraftLauncher/main/mods/rpessentials-2.5.8.jar",
-                     "sha1":  "28191e3497d2a21c84ea379ae5c5556e4fffc84a"
+                     "sha1":  "6cf4d109a591a56fc7717ed13db47b03a1ce2c0b"
                  },
                  {
                      "id":  "geckolib",
@@ -51,6 +51,13 @@
                  }
              ],
     "news":  [
+                 {
+                     "title":  "One Craft 1.0.3",
+                     "date":  "2026-11-17",
+                     "lines":  [
+                                   "Streetwear: 24 everyday clothes with options, hoods and drawn logos"
+                               ]
+                 },
                  {
                      "title":  "One Craft 1.0.3",
                      "date":  "2026-11-16",
