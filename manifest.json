@@ -1,6 +1,6 @@
 ﻿{
     "name":  "One Craft",
-    "version":  "1.0.3",
+    "version":  "1.0.4",
     "minecraft":  "1.21.1",
     "neoforge":  "21.1.265",
     "tagline":  "Set sail across the Blue Planet",
@@ -17,16 +17,16 @@
                  {
                      "id":  "onecraft",
                      "name":  "One Craft",
-                     "file":  "onecraft-1.0.3-20261117-1249.jar",
-                     "url":  "https://raw.githubusercontent.com/vLilMike/OneCraftLauncher/main/mods/onecraft-1.0.3-20261117-1249.jar",
-                     "sha1":  "142fbba7fb90e39fd14c36e5b1710f2e3e4d73c0"
+                     "file":  "onecraft-1.0.4-20261117-1452.jar",
+                     "url":  "https://raw.githubusercontent.com/vLilMike/OneCraftLauncher/main/mods/onecraft-1.0.4-20261117-1452.jar",
+                     "sha1":  "564e6e46a8ba7f557a3330c900aa37d01176cdd2"
                  },
                  {
                      "id":  "rpessentials",
                      "name":  "RP Essentials",
-                     "file":  "rpessentials-2.5.8.jar",
-                     "url":  "https://raw.githubusercontent.com/vLilMike/OneCraftLauncher/main/mods/rpessentials-2.5.8.jar",
-                     "sha1":  "6cf4d109a591a56fc7717ed13db47b03a1ce2c0b"
+                     "file":  "rpessentials-2.5.9.jar",
+                     "url":  "https://raw.githubusercontent.com/vLilMike/OneCraftLauncher/main/mods/rpessentials-2.5.9.jar",
+                     "sha1":  "c5fbcdee0723b53c9926a691eec8fa282461f3cd"
                  },
                  {
                      "id":  "geckolib",
@@ -51,6 +51,13 @@
                  }
              ],
     "news":  [
+                 {
+                     "title":  "One Craft 1.0.4",
+                     "date":  "2026-11-17",
+                     "lines":  [
+                                   "Dragon fruit: slower, heavier dragon and lizard steps; new tiny wall-climbing lizard (Alt+Enter)"
+                               ]
+                 },
                  {
                      "title":  "One Craft 1.0.3",
                      "date":  "2026-11-17",
