@@ -17,16 +17,16 @@
                  {
                      "id":  "onecraft",
                      "name":  "One Craft",
-                     "file":  "onecraft-1.0.4-20261118-1309.jar",
-                     "url":  "https://raw.githubusercontent.com/vLilMike/OneCraftLauncher/main/mods/onecraft-1.0.4-20261118-1309.jar",
-                     "sha1":  "c79bac3e6e7264bc48428ad6ec307feaffb7708c"
+                     "file":  "onecraft-1.0.4-20261118-1534.jar",
+                     "url":  "https://raw.githubusercontent.com/vLilMike/OneCraftLauncher/main/mods/onecraft-1.0.4-20261118-1534.jar",
+                     "sha1":  "1add8e85930a6b4f0da61534d65d8d72ae3ecabf"
                  },
                  {
                      "id":  "rpessentials",
                      "name":  "RP Essentials",
                      "file":  "rpessentials-2.5.9.jar",
                      "url":  "https://raw.githubusercontent.com/vLilMike/OneCraftLauncher/main/mods/rpessentials-2.5.9.jar",
-                     "sha1":  "d3aa796208d808cbf217400c5fafe40566a48064"
+                     "sha1":  "176274645dec9073176389029f3ccad4b1be897a"
                  },
                  {
                      "id":  "geckolib",
@@ -51,6 +51,13 @@
                  }
              ],
     "news":  [
+                 {
+                     "title":  "One Craft 1.0.4",
+                     "date":  "2026-11-18",
+                     "lines":  [
+                                   "Treasure maps always lead to fresh treasure, renters and their guests can build in properties and markets, commissions never send you to open sea, Drake wing flight lies flat with trailing legs, dragon W flies forward, Drake flight allowed at Heaven, one banker per port"
+                               ]
+                 },
                  {
                      "title":  "One Craft 1.0.4",
                      "date":  "2026-11-18",
