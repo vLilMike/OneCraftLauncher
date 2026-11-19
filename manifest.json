@@ -17,16 +17,16 @@
                  {
                      "id":  "onecraft",
                      "name":  "One Craft",
-                     "file":  "onecraft-1.0.5-20261118-1801.jar",
-                     "url":  "https://raw.githubusercontent.com/vLilMike/OneCraftLauncher/main/mods/onecraft-1.0.5-20261118-1801.jar",
-                     "sha1":  "68719ea552027a5a8c405fb5e13bd59c36da748b"
+                     "file":  "onecraft-1.0.5-20261119-1148.jar",
+                     "url":  "https://raw.githubusercontent.com/vLilMike/OneCraftLauncher/main/mods/onecraft-1.0.5-20261119-1148.jar",
+                     "sha1":  "36c1424d2c47b57a460f9ea47eb746f4148102dc"
                  },
                  {
                      "id":  "rpessentials",
                      "name":  "RP Essentials",
                      "file":  "rpessentials-2.5.10.jar",
                      "url":  "https://raw.githubusercontent.com/vLilMike/OneCraftLauncher/main/mods/rpessentials-2.5.10.jar",
-                     "sha1":  "68512abadca9872c3e4e5dbbc48d4a5a51087645"
+                     "sha1":  "997829d84efbd0e7c8babdc035b9fd836dd99214"
                  },
                  {
                      "id":  "geckolib",
@@ -51,6 +51,13 @@
                  }
              ],
     "news":  [
+                 {
+                     "title":  "One Craft 1.0.5",
+                     "date":  "2026-11-19",
+                     "lines":  [
+                                   "Pirates and Marines no longer spawn on claimed land; island bands roll every 10 minutes at 33%; fishing Devil Fruits are now 1 in 2,000."
+                               ]
+                 },
                  {
                      "title":  "One Craft 1.0.5",
                      "date":  "2026-11-18",
