@@ -26,7 +26,7 @@
                      "name":  "RP Essentials",
                      "file":  "rpessentials-2.5.10.jar",
                      "url":  "https://raw.githubusercontent.com/vLilMike/OneCraftLauncher/main/mods/rpessentials-2.5.10.jar",
-                     "sha1":  "f908b51023b6b3340e05c82351b5a642da66d71e"
+                     "sha1":  "68512abadca9872c3e4e5dbbc48d4a5a51087645"
                  },
                  {
                      "id":  "geckolib",
@@ -51,6 +51,13 @@
                  }
              ],
     "news":  [
+                 {
+                     "title":  "One Craft 1.0.5",
+                     "date":  "2026-11-18",
+                     "lines":  [
+                                   "Beaten pirates and Marines drop Beli (up to 2,000 each) and some loot, including mission and Heaven NPCs."
+                               ]
+                 },
                  {
                      "title":  "One Craft 1.0.5",
                      "date":  "2026-11-18",
