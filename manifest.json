@@ -17,16 +17,16 @@
                  {
                      "id":  "onecraft",
                      "name":  "One Craft",
-                     "file":  "onecraft-1.0.5-20261119-1148.jar",
-                     "url":  "https://raw.githubusercontent.com/vLilMike/OneCraftLauncher/main/mods/onecraft-1.0.5-20261119-1148.jar",
-                     "sha1":  "36c1424d2c47b57a460f9ea47eb746f4148102dc"
+                     "file":  "onecraft-1.0.5-20261119-1539.jar",
+                     "url":  "https://raw.githubusercontent.com/vLilMike/OneCraftLauncher/main/mods/onecraft-1.0.5-20261119-1539.jar",
+                     "sha1":  "8f86e962e4cb3a1197c3cdaaadcf235b3556f603"
                  },
                  {
                      "id":  "rpessentials",
                      "name":  "RP Essentials",
                      "file":  "rpessentials-2.5.10.jar",
                      "url":  "https://raw.githubusercontent.com/vLilMike/OneCraftLauncher/main/mods/rpessentials-2.5.10.jar",
-                     "sha1":  "997829d84efbd0e7c8babdc035b9fd836dd99214"
+                     "sha1":  "b0c23786ff3ae9ca9b41023ed6459fab432398a8"
                  },
                  {
                      "id":  "geckolib",
@@ -51,6 +51,13 @@
                  }
              ],
     "news":  [
+                 {
+                     "title":  "One Craft 1.0.5",
+                     "date":  "2026-11-19",
+                     "lines":  [
+                                   "Justice Blaster: 64-block Z lock-on while held, every shot flies to the crosshair, the Seeker fires without a lock; now made by Veteran Tinkerers at the Parts Lathe"
+                               ]
+                 },
                  {
                      "title":  "One Craft 1.0.5",
                      "date":  "2026-11-19",
