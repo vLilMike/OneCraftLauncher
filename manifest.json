@@ -17,16 +17,16 @@
                  {
                      "id":  "onecraft",
                      "name":  "One Craft",
-                     "file":  "onecraft-1.0.5-20261120-1151.jar",
-                     "url":  "https://raw.githubusercontent.com/vLilMike/OneCraftLauncher/main/mods/onecraft-1.0.5-20261120-1151.jar",
-                     "sha1":  "456fc0551040202ee744a2225d4447dcf67e4474"
+                     "file":  "onecraft-1.0.5-20261120-1255.jar",
+                     "url":  "https://raw.githubusercontent.com/vLilMike/OneCraftLauncher/main/mods/onecraft-1.0.5-20261120-1255.jar",
+                     "sha1":  "ac6f560531dffca30855409f6c4c6be639ecdf4a"
                  },
                  {
                      "id":  "rpessentials",
                      "name":  "RP Essentials",
                      "file":  "rpessentials-2.5.10.jar",
                      "url":  "https://raw.githubusercontent.com/vLilMike/OneCraftLauncher/main/mods/rpessentials-2.5.10.jar",
-                     "sha1":  "39d8d72eb99b6ccf8d8a9895b541a2486b6df43f"
+                     "sha1":  "cbedfd73dcae6e83f934814d57bf0a263e84dfda"
                  },
                  {
                      "id":  "geckolib",
@@ -51,6 +51,13 @@
                  }
              ],
     "news":  [
+                 {
+                     "title":  "One Craft 1.0.5",
+                     "date":  "2026-11-20",
+                     "lines":  [
+                                   "Naval cannon overhaul (broadsides, crew guns, 3 ammo types, sail and gun damage), sunken ships rebuilt by Shipwrights, Better Repair Kits at the Woodworking Bench, NPC Kill/Leave, clothing armor 2, role level display fix"
+                               ]
+                 },
                  {
                      "title":  "One Craft 1.0.5",
                      "date":  "2026-11-20",
