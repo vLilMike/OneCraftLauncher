@@ -1,6 +1,6 @@
 ﻿{
     "name":  "One Craft",
-    "version":  "1.0.5",
+    "version":  "1.1.0",
     "minecraft":  "1.21.1",
     "neoforge":  "21.1.265",
     "tagline":  "Set sail across the Blue Planet",
@@ -17,16 +17,16 @@
                  {
                      "id":  "onecraft",
                      "name":  "One Craft",
-                     "file":  "onecraft-1.0.5-20261120-1255.jar",
-                     "url":  "https://raw.githubusercontent.com/vLilMike/OneCraftLauncher/main/mods/onecraft-1.0.5-20261120-1255.jar",
-                     "sha1":  "ac6f560531dffca30855409f6c4c6be639ecdf4a"
+                     "file":  "onecraft-1.1.0-20261120-1357.jar",
+                     "url":  "https://raw.githubusercontent.com/vLilMike/OneCraftLauncher/main/mods/onecraft-1.1.0-20261120-1357.jar",
+                     "sha1":  "eda61d7d85e4b37434a73eeabe91b76cb1219287"
                  },
                  {
                      "id":  "rpessentials",
                      "name":  "RP Essentials",
-                     "file":  "rpessentials-2.5.10.jar",
-                     "url":  "https://raw.githubusercontent.com/vLilMike/OneCraftLauncher/main/mods/rpessentials-2.5.10.jar",
-                     "sha1":  "cbedfd73dcae6e83f934814d57bf0a263e84dfda"
+                     "file":  "rpessentials-2.6.0.jar",
+                     "url":  "https://raw.githubusercontent.com/vLilMike/OneCraftLauncher/main/mods/rpessentials-2.6.0.jar",
+                     "sha1":  "96a983dddbb811dd26bd3d66964e381ce18488b6"
                  },
                  {
                      "id":  "geckolib",
@@ -51,6 +51,13 @@
                  }
              ],
     "news":  [
+                 {
+                     "title":  "One Craft 1.1.0",
+                     "date":  "2026-11-20",
+                     "lines":  [
+                                   "One Craft 1.1 and RP Essentials 2.6: Chapter 2 and your own crewmate, the Turkey Hunt, the Leopard Zoan rework, a full player guide, Kill or Leave, a separate RP and Crew chat window, the naval overhaul, six-drill Heaven Training, stats capped at the level cap."
+                               ]
+                 },
                  {
                      "title":  "One Craft 1.0.5",
                      "date":  "2026-11-20",
