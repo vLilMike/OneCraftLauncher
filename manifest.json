@@ -17,16 +17,16 @@
                  {
                      "id":  "onecraft",
                      "name":  "One Craft",
-                     "file":  "onecraft-1.0.5-20261119-1539.jar",
-                     "url":  "https://raw.githubusercontent.com/vLilMike/OneCraftLauncher/main/mods/onecraft-1.0.5-20261119-1539.jar",
-                     "sha1":  "8f86e962e4cb3a1197c3cdaaadcf235b3556f603"
+                     "file":  "onecraft-1.0.5-20261120-1151.jar",
+                     "url":  "https://raw.githubusercontent.com/vLilMike/OneCraftLauncher/main/mods/onecraft-1.0.5-20261120-1151.jar",
+                     "sha1":  "456fc0551040202ee744a2225d4447dcf67e4474"
                  },
                  {
                      "id":  "rpessentials",
                      "name":  "RP Essentials",
                      "file":  "rpessentials-2.5.10.jar",
                      "url":  "https://raw.githubusercontent.com/vLilMike/OneCraftLauncher/main/mods/rpessentials-2.5.10.jar",
-                     "sha1":  "b0c23786ff3ae9ca9b41023ed6459fab432398a8"
+                     "sha1":  "39d8d72eb99b6ccf8d8a9895b541a2486b6df43f"
                  },
                  {
                      "id":  "geckolib",
@@ -51,6 +51,13 @@
                  }
              ],
     "news":  [
+                 {
+                     "title":  "One Craft 1.0.5",
+                     "date":  "2026-11-20",
+                     "lines":  [
+                                   "NPCs no longer have Haki or Logia fruits; NPC bounties toned down; skunk and raccoon removed"
+                               ]
+                 },
                  {
                      "title":  "One Craft 1.0.5",
                      "date":  "2026-11-19",
