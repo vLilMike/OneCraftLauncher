@@ -17,16 +17,16 @@
                  {
                      "id":  "onecraft",
                      "name":  "One Craft",
-                     "file":  "onecraft-1.1.0-20261120-1357.jar",
-                     "url":  "https://raw.githubusercontent.com/vLilMike/OneCraftLauncher/main/mods/onecraft-1.1.0-20261120-1357.jar",
-                     "sha1":  "eda61d7d85e4b37434a73eeabe91b76cb1219287"
+                     "file":  "onecraft-1.1.0-20261120-1439.jar",
+                     "url":  "https://raw.githubusercontent.com/vLilMike/OneCraftLauncher/main/mods/onecraft-1.1.0-20261120-1439.jar",
+                     "sha1":  "ba9526c7af2b22f34135340eff02113720c19b09"
                  },
                  {
                      "id":  "rpessentials",
                      "name":  "RP Essentials",
                      "file":  "rpessentials-2.6.0.jar",
                      "url":  "https://raw.githubusercontent.com/vLilMike/OneCraftLauncher/main/mods/rpessentials-2.6.0.jar",
-                     "sha1":  "96a983dddbb811dd26bd3d66964e381ce18488b6"
+                     "sha1":  "df954ef23e5fb59b39864deabe119fc69e62235e"
                  },
                  {
                      "id":  "geckolib",
@@ -51,6 +51,13 @@
                  }
              ],
     "news":  [
+                 {
+                     "title":  "One Craft 1.1.0",
+                     "date":  "2026-11-20",
+                     "lines":  [
+                                   "Freeform sword swings, attack speed in combat, stat cap leaves Health alone"
+                               ]
+                 },
                  {
                      "title":  "One Craft 1.1.0",
                      "date":  "2026-11-20",
