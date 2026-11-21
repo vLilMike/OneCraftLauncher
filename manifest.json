@@ -17,16 +17,16 @@
                  {
                      "id":  "onecraft",
                      "name":  "One Craft",
-                     "file":  "onecraft-1.1.0-20261120-1439.jar",
-                     "url":  "https://raw.githubusercontent.com/vLilMike/OneCraftLauncher/main/mods/onecraft-1.1.0-20261120-1439.jar",
-                     "sha1":  "ba9526c7af2b22f34135340eff02113720c19b09"
+                     "file":  "onecraft-1.1.0-20261120-1610.jar",
+                     "url":  "https://raw.githubusercontent.com/vLilMike/OneCraftLauncher/main/mods/onecraft-1.1.0-20261120-1610.jar",
+                     "sha1":  "8c5f3b9ecbd96492708b67677edc65d7949184d6"
                  },
                  {
                      "id":  "rpessentials",
                      "name":  "RP Essentials",
                      "file":  "rpessentials-2.6.0.jar",
                      "url":  "https://raw.githubusercontent.com/vLilMike/OneCraftLauncher/main/mods/rpessentials-2.6.0.jar",
-                     "sha1":  "df954ef23e5fb59b39864deabe119fc69e62235e"
+                     "sha1":  "f973f7fe2c501e32b450b86e8bdbd3da54178e39"
                  },
                  {
                      "id":  "geckolib",
@@ -51,6 +51,13 @@
                  }
              ],
     "news":  [
+                 {
+                     "title":  "One Craft 1.1.0",
+                     "date":  "2026-11-21",
+                     "lines":  [
+                                   "Stat Points past level 25 (training stops at player level 25), one-time 35 Skill Points for level 17+ characters, Better Repair Kits fix everything, slower repair minigames, chat window one channel at a time, turkey event stop clears turkeys, fewer Marine port NPCs"
+                               ]
+                 },
                  {
                      "title":  "One Craft 1.1.0",
                      "date":  "2026-11-20",
