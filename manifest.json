@@ -17,9 +17,9 @@
                  {
                      "id":  "onecraft",
                      "name":  "One Craft",
-                     "file":  "onecraft-1.1.0-20261124-1528.jar",
-                     "url":  "https://raw.githubusercontent.com/vLilMike/OneCraftLauncher/main/mods/onecraft-1.1.0-20261124-1528.jar",
-                     "sha1":  "4f6c78f31b5ae0223b505e7ea02c222e2ed4bdd3"
+                     "file":  "onecraft-1.1.0-20261124-1604.jar",
+                     "url":  "https://raw.githubusercontent.com/vLilMike/OneCraftLauncher/main/mods/onecraft-1.1.0-20261124-1604.jar",
+                     "sha1":  "89dacda2b53c3a2d787b96f82ff4c23f02afc43c"
                  },
                  {
                      "id":  "rpessentials",
@@ -51,6 +51,13 @@
                  }
              ],
     "news":  [
+                 {
+                     "title":  "One Craft 1.1.0",
+                     "date":  "2026-11-24",
+                     "lines":  [
+                                   "Tontatta beds, weapon grade damage fix and flat bonuses, barter restock every 2 hours, barter fruits 7% with Logia at double price, 3 trait clothes at barterers"
+                               ]
+                 },
                  {
                      "title":  "One Craft 1.1.0",
                      "date":  "2026-11-24",
