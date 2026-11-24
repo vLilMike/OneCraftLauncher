@@ -26,7 +26,7 @@
                      "name":  "RP Essentials",
                      "file":  "rpessentials-2.6.0.jar",
                      "url":  "https://raw.githubusercontent.com/vLilMike/OneCraftLauncher/main/mods/rpessentials-2.6.0.jar",
-                     "sha1":  "f973f7fe2c501e32b450b86e8bdbd3da54178e39"
+                     "sha1":  "df7e4459f30a02ff088c48e4f84a8d3d621ad1fe"
                  },
                  {
                      "id":  "geckolib",
@@ -51,6 +51,13 @@
                  }
              ],
     "news":  [
+                 {
+                     "title":  "One Craft 1.1.0",
+                     "date":  "2026-11-24",
+                     "lines":  [
+                                   "RP Essentials also works on the dev test server (minepiecedevtest.exaroton.me)"
+                               ]
+                 },
                  {
                      "title":  "One Craft 1.1.0",
                      "date":  "2026-11-24",
