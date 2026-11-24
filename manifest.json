@@ -17,9 +17,9 @@
                  {
                      "id":  "onecraft",
                      "name":  "One Craft",
-                     "file":  "onecraft-1.1.0-20261124-1228.jar",
-                     "url":  "https://raw.githubusercontent.com/vLilMike/OneCraftLauncher/main/mods/onecraft-1.1.0-20261124-1228.jar",
-                     "sha1":  "03d777ae0f96145373b6af4ead6aa1725fb3ca76"
+                     "file":  "onecraft-1.1.0-20261124-1354.jar",
+                     "url":  "https://raw.githubusercontent.com/vLilMike/OneCraftLauncher/main/mods/onecraft-1.1.0-20261124-1354.jar",
+                     "sha1":  "453dd5925c421355ab8cd3da9137fe9509f32482"
                  },
                  {
                      "id":  "rpessentials",
@@ -51,6 +51,13 @@
                  }
              ],
     "news":  [
+                 {
+                     "title":  "One Craft 1.1.0",
+                     "date":  "2026-11-24",
+                     "lines":  [
+                                   "Quake attacks reach further (Fist shockwave, Shatter, Crash, Seaquake)"
+                               ]
+                 },
                  {
                      "title":  "One Craft 1.1.0",
                      "date":  "2026-11-24",
