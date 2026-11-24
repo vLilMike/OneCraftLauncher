@@ -17,16 +17,16 @@
                  {
                      "id":  "onecraft",
                      "name":  "One Craft",
-                     "file":  "onecraft-1.1.0-20261124-1354.jar",
-                     "url":  "https://raw.githubusercontent.com/vLilMike/OneCraftLauncher/main/mods/onecraft-1.1.0-20261124-1354.jar",
-                     "sha1":  "453dd5925c421355ab8cd3da9137fe9509f32482"
+                     "file":  "onecraft-1.1.0-20261124-1528.jar",
+                     "url":  "https://raw.githubusercontent.com/vLilMike/OneCraftLauncher/main/mods/onecraft-1.1.0-20261124-1528.jar",
+                     "sha1":  "4f6c78f31b5ae0223b505e7ea02c222e2ed4bdd3"
                  },
                  {
                      "id":  "rpessentials",
                      "name":  "RP Essentials",
                      "file":  "rpessentials-2.6.0.jar",
                      "url":  "https://raw.githubusercontent.com/vLilMike/OneCraftLauncher/main/mods/rpessentials-2.6.0.jar",
-                     "sha1":  "df7e4459f30a02ff088c48e4f84a8d3d621ad1fe"
+                     "sha1":  "9e039d42e7cd3f2890a7be2018486cfbcfb141e0"
                  },
                  {
                      "id":  "geckolib",
@@ -51,6 +51,13 @@
                  }
              ],
     "news":  [
+                 {
+                     "title":  "One Craft 1.1.0",
+                     "date":  "2026-11-24",
+                     "lines":  [
+                                   "Healing uses saturation first, aging up +10 years, pirate box recipe fixed, gold bars and treasure stack higher, cheaper ship rebuilds"
+                               ]
+                 },
                  {
                      "title":  "One Craft 1.1.0",
                      "date":  "2026-11-24",
