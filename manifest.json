@@ -17,16 +17,16 @@
                  {
                      "id":  "onecraft",
                      "name":  "One Craft",
-                     "file":  "onecraft-1.1.0-20261124-1604.jar",
-                     "url":  "https://raw.githubusercontent.com/vLilMike/OneCraftLauncher/main/mods/onecraft-1.1.0-20261124-1604.jar",
-                     "sha1":  "89dacda2b53c3a2d787b96f82ff4c23f02afc43c"
+                     "file":  "onecraft-1.1.0-20261124-1620.jar",
+                     "url":  "https://raw.githubusercontent.com/vLilMike/OneCraftLauncher/main/mods/onecraft-1.1.0-20261124-1620.jar",
+                     "sha1":  "e4da7c552017068b8f557ec7b16b01222a78ef28"
                  },
                  {
                      "id":  "rpessentials",
                      "name":  "RP Essentials",
                      "file":  "rpessentials-2.6.0.jar",
                      "url":  "https://raw.githubusercontent.com/vLilMike/OneCraftLauncher/main/mods/rpessentials-2.6.0.jar",
-                     "sha1":  "9e039d42e7cd3f2890a7be2018486cfbcfb141e0"
+                     "sha1":  "562d04f563e402ec633cf15e53dd4cb20ecb1b01"
                  },
                  {
                      "id":  "geckolib",
@@ -51,6 +51,13 @@
                  }
              ],
     "news":  [
+                 {
+                     "title":  "One Craft 1.1.0",
+                     "date":  "2026-11-24",
+                     "lines":  [
+                                   "Combat mode weapons-only hand and skill keys, Gear Third locked in RP Essentials, a second free character reset, Electro techniques show no icon"
+                               ]
+                 },
                  {
                      "title":  "One Craft 1.1.0",
                      "date":  "2026-11-24",
