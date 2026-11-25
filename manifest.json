@@ -17,16 +17,16 @@
                  {
                      "id":  "onecraft",
                      "name":  "One Craft",
-                     "file":  "onecraft-1.1.0-20261124-1647.jar",
-                     "url":  "https://raw.githubusercontent.com/vLilMike/OneCraftLauncher/main/mods/onecraft-1.1.0-20261124-1647.jar",
-                     "sha1":  "d392cf24205729320575907a0eb5fcf2c041739c"
+                     "file":  "onecraft-1.1.0-20261124-1851.jar",
+                     "url":  "https://raw.githubusercontent.com/vLilMike/OneCraftLauncher/main/mods/onecraft-1.1.0-20261124-1851.jar",
+                     "sha1":  "673d0a8a1efafc17a2f4ae7ea669fe424bac0f50"
                  },
                  {
                      "id":  "rpessentials",
                      "name":  "RP Essentials",
                      "file":  "rpessentials-2.6.0.jar",
                      "url":  "https://raw.githubusercontent.com/vLilMike/OneCraftLauncher/main/mods/rpessentials-2.6.0.jar",
-                     "sha1":  "432ea628f8c52b7d782faa3bcb7f005f97fa25d1"
+                     "sha1":  "e63445cff931f6cbd8d836a35ba1666fb2911c7b"
                  },
                  {
                      "id":  "geckolib",
@@ -51,6 +51,13 @@
                  }
              ],
     "news":  [
+                 {
+                     "title":  "One Craft 1.1.0",
+                     "date":  "2026-11-24",
+                     "lines":  [
+                                   "Every job at once: a solo setting (Settings \u003e Interface in single player, or /oc role alljobs on) lets one player work every Role together, each levelling on its own"
+                               ]
+                 },
                  {
                      "title":  "One Craft 1.1.0",
                      "date":  "2026-11-24",
