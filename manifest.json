@@ -26,7 +26,7 @@
                      "name":  "RP Essentials",
                      "file":  "rpessentials-2.6.1.jar",
                      "url":  "https://raw.githubusercontent.com/vLilMike/OneCraftLauncher/main/mods/rpessentials-2.6.1.jar",
-                     "sha1":  "8fda76ed39c2bd45747e5c802d24959414490d35"
+                     "sha1":  "047cfecad9ab1af3d4d2216f8af871d8897d82fb"
                  },
                  {
                      "id":  "geckolib",
@@ -51,6 +51,13 @@
                  }
              ],
     "news":  [
+                 {
+                     "title":  "One Craft 1.1.1",
+                     "date":  "2026-11-25",
+                     "lines":  [
+                                   "RP Essentials 2.6.1: Mikey\u0027s 3-trait weapons and 4-trait clothes are now rare rolls"
+                               ]
+                 },
                  {
                      "title":  "One Craft 1.1.1",
                      "date":  "2026-11-25",
