@@ -17,9 +17,9 @@
                  {
                      "id":  "onecraft",
                      "name":  "One Craft",
-                     "file":  "onecraft-1.1.0-20261124-1851.jar",
-                     "url":  "https://raw.githubusercontent.com/vLilMike/OneCraftLauncher/main/mods/onecraft-1.1.0-20261124-1851.jar",
-                     "sha1":  "673d0a8a1efafc17a2f4ae7ea669fe424bac0f50"
+                     "file":  "onecraft-1.1.0-20261125-1452.jar",
+                     "url":  "https://raw.githubusercontent.com/vLilMike/OneCraftLauncher/main/mods/onecraft-1.1.0-20261125-1452.jar",
+                     "sha1":  "eee4ce2a256ef1e9c2a4efacd20a0f87eeb43ef8"
                  },
                  {
                      "id":  "rpessentials",
@@ -51,6 +51,14 @@
                  }
              ],
     "news":  [
+                 {
+                     "title":  "One Craft 1.1.0",
+                     "date":  "2026-11-25",
+                     "lines":  [
+                                   "Progression resetall now also wipes skills, Skill Points and Stat Points to 0 (offline players on next login)",
+                                   "Bought (unforged) weapons nerfed: melee 60% and firearms 35% of a forged one; Blacksmith-forged and graded weapons unchanged"
+                               ]
+                 },
                  {
                      "title":  "One Craft 1.1.0",
                      "date":  "2026-11-24",
