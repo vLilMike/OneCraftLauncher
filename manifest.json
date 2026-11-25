@@ -17,16 +17,16 @@
                  {
                      "id":  "onecraft",
                      "name":  "One Craft",
-                     "file":  "onecraft-1.1.0-20261125-1452.jar",
-                     "url":  "https://raw.githubusercontent.com/vLilMike/OneCraftLauncher/main/mods/onecraft-1.1.0-20261125-1452.jar",
-                     "sha1":  "eee4ce2a256ef1e9c2a4efacd20a0f87eeb43ef8"
+                     "file":  "onecraft-1.1.0-20261125-1554.jar",
+                     "url":  "https://raw.githubusercontent.com/vLilMike/OneCraftLauncher/main/mods/onecraft-1.1.0-20261125-1554.jar",
+                     "sha1":  "2d3fbf28c51143799611b185c9b02faf0825506b"
                  },
                  {
                      "id":  "rpessentials",
                      "name":  "RP Essentials",
                      "file":  "rpessentials-2.6.0.jar",
                      "url":  "https://raw.githubusercontent.com/vLilMike/OneCraftLauncher/main/mods/rpessentials-2.6.0.jar",
-                     "sha1":  "e63445cff931f6cbd8d836a35ba1666fb2911c7b"
+                     "sha1":  "75184579ca3b7411ae13ac27dfd115b2838b20be"
                  },
                  {
                      "id":  "geckolib",
@@ -51,6 +51,13 @@
                  }
              ],
     "news":  [
+                 {
+                     "title":  "One Craft 1.1.0",
+                     "date":  "2026-11-25",
+                     "lines":  [
+                                   "Mikey: new named NPC and rare Roadstar travelling merchant (RP Essentials), Puffer Vest, Mohawk hairbase, Plasters face option, 4-trait clothes and 3-trait weapons"
+                               ]
+                 },
                  {
                      "title":  "One Craft 1.1.0",
                      "date":  "2026-11-25",
