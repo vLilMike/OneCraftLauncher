@@ -17,9 +17,9 @@
                  {
                      "id":  "onecraft",
                      "name":  "One Craft",
-                     "file":  "onecraft-1.1.1-20261125-1714.jar",
-                     "url":  "https://raw.githubusercontent.com/vLilMike/OneCraftLauncher/main/mods/onecraft-1.1.1-20261125-1714.jar",
-                     "sha1":  "63c7424510e4c4e0188df949bcefcc02d1b216bf"
+                     "file":  "onecraft-1.1.1-20261125-2002.jar",
+                     "url":  "https://raw.githubusercontent.com/vLilMike/OneCraftLauncher/main/mods/onecraft-1.1.1-20261125-2002.jar",
+                     "sha1":  "f8b697610589bb9623700ab689afc9d673148f0a"
                  },
                  {
                      "id":  "rpessentials",
@@ -51,6 +51,13 @@
                  }
              ],
     "news":  [
+                 {
+                     "title":  "One Craft 1.1.1",
+                     "date":  "2026-11-25",
+                     "lines":  [
+                                   "One Craft 1.1.1: fix outfits with two or more pieces reading as the wrong clothes (and clothes getting stuck)"
+                               ]
+                 },
                  {
                      "title":  "One Craft 1.1.1",
                      "date":  "2026-11-25",
