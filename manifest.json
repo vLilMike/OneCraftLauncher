@@ -17,16 +17,16 @@
                  {
                      "id":  "onecraft",
                      "name":  "One Craft",
-                     "file":  "onecraft-1.1.1-20261125-2002.jar",
-                     "url":  "https://raw.githubusercontent.com/vLilMike/OneCraftLauncher/main/mods/onecraft-1.1.1-20261125-2002.jar",
-                     "sha1":  "f8b697610589bb9623700ab689afc9d673148f0a"
+                     "file":  "onecraft-1.1.1-20261126-1127.jar",
+                     "url":  "https://raw.githubusercontent.com/vLilMike/OneCraftLauncher/main/mods/onecraft-1.1.1-20261126-1127.jar",
+                     "sha1":  "ffbcbc0cd43fcf9e007e13da117f48376060487c"
                  },
                  {
                      "id":  "rpessentials",
                      "name":  "RP Essentials",
                      "file":  "rpessentials-2.6.1.jar",
                      "url":  "https://raw.githubusercontent.com/vLilMike/OneCraftLauncher/main/mods/rpessentials-2.6.1.jar",
-                     "sha1":  "da6f24da7b801ba9636c325e6f73192659ed1068"
+                     "sha1":  "f4d34fd7e95d2bd90b05446ab712d7c3ea8faf7f"
                  },
                  {
                      "id":  "geckolib",
@@ -51,6 +51,13 @@
                  }
              ],
     "news":  [
+                 {
+                     "title":  "One Craft 1.1.1",
+                     "date":  "2026-11-26",
+                     "lines":  [
+                                   "Marines can resign from the Marine Panel"
+                               ]
+                 },
                  {
                      "title":  "One Craft 1.1.1",
                      "date":  "2026-11-25",
