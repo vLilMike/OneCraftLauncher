@@ -26,7 +26,7 @@
                      "name":  "RP Essentials",
                      "file":  "rpessentials-2.6.1.jar",
                      "url":  "https://raw.githubusercontent.com/vLilMike/OneCraftLauncher/main/mods/rpessentials-2.6.1.jar",
-                     "sha1":  "047cfecad9ab1af3d4d2216f8af871d8897d82fb"
+                     "sha1":  "4adb72faafa72d4661730c51920d6c08c029ef9e"
                  },
                  {
                      "id":  "geckolib",
@@ -51,6 +51,13 @@
                  }
              ],
     "news":  [
+                 {
+                     "title":  "One Craft 1.1.1",
+                     "date":  "2026-11-25",
+                     "lines":  [
+                                   "RP Essentials 2.6.1: /abandonship brings a ship lost at sea home as her deed, once an hour"
+                               ]
+                 },
                  {
                      "title":  "One Craft 1.1.1",
                      "date":  "2026-11-25",
